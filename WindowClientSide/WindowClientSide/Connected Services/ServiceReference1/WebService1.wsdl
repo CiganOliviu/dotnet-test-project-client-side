@@ -81,6 +81,40 @@
       <s:element name="DeleteDataInSprintTableByNameResponse">
         <s:complexType />
       </s:element>
+      <s:element name="AddDataInUserTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="role" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDataInUserTableResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUsersByName">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUsersByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUsersByNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDataInUserTableByEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDataInUserTableByEmailResponse">
+        <s:complexType />
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="AddDataInProjectTableSoapIn">
@@ -125,6 +159,24 @@
   <wsdl:message name="DeleteDataInSprintTableByNameSoapOut">
     <wsdl:part name="parameters" element="tns:DeleteDataInSprintTableByNameResponse" />
   </wsdl:message>
+  <wsdl:message name="AddDataInUserTableSoapIn">
+    <wsdl:part name="parameters" element="tns:AddDataInUserTable" />
+  </wsdl:message>
+  <wsdl:message name="AddDataInUserTableSoapOut">
+    <wsdl:part name="parameters" element="tns:AddDataInUserTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUsersByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUsersByName" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUsersByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUsersByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataInUserTableByEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteDataInUserTableByEmail" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataInUserTableByEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDataInUserTableByEmailResponse" />
+  </wsdl:message>
   <wsdl:portType name="WebService1Soap">
     <wsdl:operation name="AddDataInProjectTable">
       <wsdl:input message="tns:AddDataInProjectTableSoapIn" />
@@ -153,6 +205,18 @@
     <wsdl:operation name="DeleteDataInSprintTableByName">
       <wsdl:input message="tns:DeleteDataInSprintTableByNameSoapIn" />
       <wsdl:output message="tns:DeleteDataInSprintTableByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDataInUserTable">
+      <wsdl:input message="tns:AddDataInUserTableSoapIn" />
+      <wsdl:output message="tns:AddDataInUserTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsersByName">
+      <wsdl:input message="tns:GetAllUsersByNameSoapIn" />
+      <wsdl:output message="tns:GetAllUsersByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInUserTableByEmail">
+      <wsdl:input message="tns:DeleteDataInUserTableByEmailSoapIn" />
+      <wsdl:output message="tns:DeleteDataInUserTableByEmailSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
@@ -220,6 +284,33 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="AddDataInUserTable">
+      <soap:operation soapAction="http://tempuri.org/AddDataInUserTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsersByName">
+      <soap:operation soapAction="http://tempuri.org/GetAllUsersByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInUserTableByEmail">
+      <soap:operation soapAction="http://tempuri.org/DeleteDataInUserTableByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -279,6 +370,33 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteDataInSprintTableByName">
       <soap12:operation soapAction="http://tempuri.org/DeleteDataInSprintTableByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDataInUserTable">
+      <soap12:operation soapAction="http://tempuri.org/AddDataInUserTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsersByName">
+      <soap12:operation soapAction="http://tempuri.org/GetAllUsersByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInUserTableByEmail">
+      <soap12:operation soapAction="http://tempuri.org/DeleteDataInUserTableByEmail" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

@@ -71,6 +71,27 @@ namespace WindowClientSide.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInSprintTableByName", ReplyAction="*")]
         System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse> DeleteDataInSprintTableByNameAsync(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest request);
+        
+        // CODEGEN: Generating message contract since element name firstName from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInUserTable", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.AddDataInUserTableResponse AddDataInUserTable(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInUserTable", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInUserTableResponse> AddDataInUserTableAsync(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllUsersByNameResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUsersByName", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetAllUsersByNameResponse GetAllUsersByName(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUsersByName", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByNameResponse> GetAllUsersByNameAsync(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request);
+        
+        // CODEGEN: Generating message contract since element name email from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInUserTableByEmail", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse DeleteDataInUserTableByEmail(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInUserTableByEmail", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse> DeleteDataInUserTableByEmailAsync(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -455,6 +476,205 @@ namespace WindowClientSide.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class AddDataInUserTableRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="AddDataInUserTable", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.AddDataInUserTableRequestBody Body;
+        
+        public AddDataInUserTableRequest() {
+        }
+        
+        public AddDataInUserTableRequest(WindowClientSide.ServiceReference1.AddDataInUserTableRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class AddDataInUserTableRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string firstName;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string lastName;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string email;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string role;
+        
+        public AddDataInUserTableRequestBody() {
+        }
+        
+        public AddDataInUserTableRequestBody(int id, string firstName, string lastName, string email, string role) {
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.email = email;
+            this.role = role;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class AddDataInUserTableResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="AddDataInUserTableResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.AddDataInUserTableResponseBody Body;
+        
+        public AddDataInUserTableResponse() {
+        }
+        
+        public AddDataInUserTableResponse(WindowClientSide.ServiceReference1.AddDataInUserTableResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class AddDataInUserTableResponseBody {
+        
+        public AddDataInUserTableResponseBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllUsersByNameRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersByName", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody Body;
+        
+        public GetAllUsersByNameRequest() {
+        }
+        
+        public GetAllUsersByNameRequest(WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllUsersByNameRequestBody {
+        
+        public GetAllUsersByNameRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllUsersByNameResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersByNameResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllUsersByNameResponseBody Body;
+        
+        public GetAllUsersByNameResponse() {
+        }
+        
+        public GetAllUsersByNameResponse(WindowClientSide.ServiceReference1.GetAllUsersByNameResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllUsersByNameResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByNameResult;
+        
+        public GetAllUsersByNameResponseBody() {
+        }
+        
+        public GetAllUsersByNameResponseBody(WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByNameResult) {
+            this.GetAllUsersByNameResult = GetAllUsersByNameResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteDataInUserTableByEmailRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteDataInUserTableByEmail", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequestBody Body;
+        
+        public DeleteDataInUserTableByEmailRequest() {
+        }
+        
+        public DeleteDataInUserTableByEmailRequest(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteDataInUserTableByEmailRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string email;
+        
+        public DeleteDataInUserTableByEmailRequestBody() {
+        }
+        
+        public DeleteDataInUserTableByEmailRequestBody(string email) {
+            this.email = email;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteDataInUserTableByEmailResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteDataInUserTableByEmailResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponseBody Body;
+        
+        public DeleteDataInUserTableByEmailResponse() {
+        }
+        
+        public DeleteDataInUserTableByEmailResponse(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class DeleteDataInUserTableByEmailResponseBody {
+        
+        public DeleteDataInUserTableByEmailResponseBody() {
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebService1SoapChannel : WindowClientSide.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
@@ -638,6 +858,85 @@ namespace WindowClientSide.ServiceReference1 {
             inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequestBody();
             inValue.Body.name = name;
             return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInSprintTableByNameAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.AddDataInUserTableResponse WindowClientSide.ServiceReference1.WebService1Soap.AddDataInUserTable(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request) {
+            return base.Channel.AddDataInUserTable(request);
+        }
+        
+        public void AddDataInUserTable(int id, string firstName, string lastName, string email, string role) {
+            WindowClientSide.ServiceReference1.AddDataInUserTableRequest inValue = new WindowClientSide.ServiceReference1.AddDataInUserTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.AddDataInUserTableRequestBody();
+            inValue.Body.id = id;
+            inValue.Body.firstName = firstName;
+            inValue.Body.lastName = lastName;
+            inValue.Body.email = email;
+            inValue.Body.role = role;
+            WindowClientSide.ServiceReference1.AddDataInUserTableResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).AddDataInUserTable(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInUserTableResponse> WindowClientSide.ServiceReference1.WebService1Soap.AddDataInUserTableAsync(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request) {
+            return base.Channel.AddDataInUserTableAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInUserTableResponse> AddDataInUserTableAsync(int id, string firstName, string lastName, string email, string role) {
+            WindowClientSide.ServiceReference1.AddDataInUserTableRequest inValue = new WindowClientSide.ServiceReference1.AddDataInUserTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.AddDataInUserTableRequestBody();
+            inValue.Body.id = id;
+            inValue.Body.firstName = firstName;
+            inValue.Body.lastName = lastName;
+            inValue.Body.email = email;
+            inValue.Body.role = role;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).AddDataInUserTableAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.GetAllUsersByNameResponse WindowClientSide.ServiceReference1.WebService1Soap.GetAllUsersByName(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request) {
+            return base.Channel.GetAllUsersByName(request);
+        }
+        
+        public WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByName() {
+            WindowClientSide.ServiceReference1.GetAllUsersByNameRequest inValue = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody();
+            WindowClientSide.ServiceReference1.GetAllUsersByNameResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUsersByName(inValue);
+            return retVal.Body.GetAllUsersByNameResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByNameResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetAllUsersByNameAsync(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request) {
+            return base.Channel.GetAllUsersByNameAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByNameResponse> GetAllUsersByNameAsync() {
+            WindowClientSide.ServiceReference1.GetAllUsersByNameRequest inValue = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody();
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUsersByNameAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse WindowClientSide.ServiceReference1.WebService1Soap.DeleteDataInUserTableByEmail(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest request) {
+            return base.Channel.DeleteDataInUserTableByEmail(request);
+        }
+        
+        public void DeleteDataInUserTableByEmail(string email) {
+            WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest inValue = new WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequestBody();
+            inValue.Body.email = email;
+            WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInUserTableByEmail(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse> WindowClientSide.ServiceReference1.WebService1Soap.DeleteDataInUserTableByEmailAsync(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest request) {
+            return base.Channel.DeleteDataInUserTableByEmailAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse> DeleteDataInUserTableByEmailAsync(string email) {
+            WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest inValue = new WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequestBody();
+            inValue.Body.email = email;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInUserTableByEmailAsync(inValue);
         }
     }
 }
