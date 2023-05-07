@@ -95,13 +95,13 @@
       <s:element name="AddDataInUserTableResponse">
         <s:complexType />
       </s:element>
-      <s:element name="GetAllUsersByName">
+      <s:element name="GetAllUsersByEmail">
         <s:complexType />
       </s:element>
-      <s:element name="GetAllUsersByNameResponse">
+      <s:element name="GetAllUsersByEmailResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetAllUsersByNameResult" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUsersByEmailResult" type="tns:ArrayOfString" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -165,11 +165,11 @@
   <wsdl:message name="AddDataInUserTableSoapOut">
     <wsdl:part name="parameters" element="tns:AddDataInUserTableResponse" />
   </wsdl:message>
-  <wsdl:message name="GetAllUsersByNameSoapIn">
-    <wsdl:part name="parameters" element="tns:GetAllUsersByName" />
+  <wsdl:message name="GetAllUsersByEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUsersByEmail" />
   </wsdl:message>
-  <wsdl:message name="GetAllUsersByNameSoapOut">
-    <wsdl:part name="parameters" element="tns:GetAllUsersByNameResponse" />
+  <wsdl:message name="GetAllUsersByEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUsersByEmailResponse" />
   </wsdl:message>
   <wsdl:message name="DeleteDataInUserTableByEmailSoapIn">
     <wsdl:part name="parameters" element="tns:DeleteDataInUserTableByEmail" />
@@ -210,9 +210,9 @@
       <wsdl:input message="tns:AddDataInUserTableSoapIn" />
       <wsdl:output message="tns:AddDataInUserTableSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="GetAllUsersByName">
-      <wsdl:input message="tns:GetAllUsersByNameSoapIn" />
-      <wsdl:output message="tns:GetAllUsersByNameSoapOut" />
+    <wsdl:operation name="GetAllUsersByEmail">
+      <wsdl:input message="tns:GetAllUsersByEmailSoapIn" />
+      <wsdl:output message="tns:GetAllUsersByEmailSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="DeleteDataInUserTableByEmail">
       <wsdl:input message="tns:DeleteDataInUserTableByEmailSoapIn" />
@@ -293,8 +293,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetAllUsersByName">
-      <soap:operation soapAction="http://tempuri.org/GetAllUsersByName" style="document" />
+    <wsdl:operation name="GetAllUsersByEmail">
+      <soap:operation soapAction="http://tempuri.org/GetAllUsersByEmail" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -386,8 +386,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetAllUsersByName">
-      <soap12:operation soapAction="http://tempuri.org/GetAllUsersByName" style="document" />
+    <wsdl:operation name="GetAllUsersByEmail">
+      <soap12:operation soapAction="http://tempuri.org/GetAllUsersByEmail" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

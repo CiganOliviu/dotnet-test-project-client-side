@@ -47,5 +47,17 @@ namespace WindowClientSide
         {
 
         }
+
+        private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserForm1 sprintsForm = new UserForm1();
+            sprintsForm.Show();
+        }
+
+        private void displayUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserForm2 sprintsForm = new UserForm2();
+            sprintsForm.Show();
+        }
     }
 }

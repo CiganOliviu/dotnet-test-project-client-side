@@ -85,6 +85,18 @@
     <Compile Include="SprintsForm1.Designer.cs">
       <DependentUpon>SprintsForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm1.Designer.cs">
+      <DependentUpon>UserForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm2.Designer.cs">
+      <DependentUpon>UserForm2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,11 +121,20 @@
     <EmbeddedResource Include="SprintsForm1.resx">
       <DependentUpon>SprintsForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserForm1.resx">
+      <DependentUpon>UserForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm2.resx">
+      <DependentUpon>UserForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Connected Services\ServiceReference1\WebService1.wsdl" />
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.AddDataInProjectTableResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.AddDataInSprinTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.AddDataInUserTableResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.ArrayOfString.datasource">
@@ -125,10 +146,16 @@
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.GetAllProjectsByNameResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">

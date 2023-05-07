@@ -79,12 +79,12 @@ namespace WindowClientSide.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInUserTable", ReplyAction="*")]
         System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInUserTableResponse> AddDataInUserTableAsync(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request);
         
-        // CODEGEN: Generating message contract since element name GetAllUsersByNameResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUsersByName", ReplyAction="*")]
-        WindowClientSide.ServiceReference1.GetAllUsersByNameResponse GetAllUsersByName(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request);
+        // CODEGEN: Generating message contract since element name GetAllUsersByEmailResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUsersByEmail", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse GetAllUsersByEmail(WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUsersByName", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByNameResponse> GetAllUsersByNameAsync(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUsersByEmail", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse> GetAllUsersByEmailAsync(WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest request);
         
         // CODEGEN: Generating message contract since element name email from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInUserTableByEmail", ReplyAction="*")]
@@ -557,15 +557,15 @@ namespace WindowClientSide.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetAllUsersByNameRequest {
+    public partial class GetAllUsersByEmailRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersByName", Namespace="http://tempuri.org/", Order=0)]
-        public WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersByEmail", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllUsersByEmailRequestBody Body;
         
-        public GetAllUsersByNameRequest() {
+        public GetAllUsersByEmailRequest() {
         }
         
-        public GetAllUsersByNameRequest(WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody Body) {
+        public GetAllUsersByEmailRequest(WindowClientSide.ServiceReference1.GetAllUsersByEmailRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -574,9 +574,9 @@ namespace WindowClientSide.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class GetAllUsersByNameRequestBody {
+    public partial class GetAllUsersByEmailRequestBody {
         
-        public GetAllUsersByNameRequestBody() {
+        public GetAllUsersByEmailRequestBody() {
         }
     }
     
@@ -584,15 +584,15 @@ namespace WindowClientSide.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetAllUsersByNameResponse {
+    public partial class GetAllUsersByEmailResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersByNameResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WindowClientSide.ServiceReference1.GetAllUsersByNameResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUsersByEmailResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllUsersByEmailResponseBody Body;
         
-        public GetAllUsersByNameResponse() {
+        public GetAllUsersByEmailResponse() {
         }
         
-        public GetAllUsersByNameResponse(WindowClientSide.ServiceReference1.GetAllUsersByNameResponseBody Body) {
+        public GetAllUsersByEmailResponse(WindowClientSide.ServiceReference1.GetAllUsersByEmailResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -601,16 +601,16 @@ namespace WindowClientSide.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetAllUsersByNameResponseBody {
+    public partial class GetAllUsersByEmailResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByNameResult;
+        public WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByEmailResult;
         
-        public GetAllUsersByNameResponseBody() {
+        public GetAllUsersByEmailResponseBody() {
         }
         
-        public GetAllUsersByNameResponseBody(WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByNameResult) {
-            this.GetAllUsersByNameResult = GetAllUsersByNameResult;
+        public GetAllUsersByEmailResponseBody(WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByEmailResult) {
+            this.GetAllUsersByEmailResult = GetAllUsersByEmailResult;
         }
     }
     
@@ -893,26 +893,26 @@ namespace WindowClientSide.ServiceReference1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowClientSide.ServiceReference1.GetAllUsersByNameResponse WindowClientSide.ServiceReference1.WebService1Soap.GetAllUsersByName(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request) {
-            return base.Channel.GetAllUsersByName(request);
+        WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse WindowClientSide.ServiceReference1.WebService1Soap.GetAllUsersByEmail(WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest request) {
+            return base.Channel.GetAllUsersByEmail(request);
         }
         
-        public WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByName() {
-            WindowClientSide.ServiceReference1.GetAllUsersByNameRequest inValue = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequest();
-            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody();
-            WindowClientSide.ServiceReference1.GetAllUsersByNameResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUsersByName(inValue);
-            return retVal.Body.GetAllUsersByNameResult;
+        public WindowClientSide.ServiceReference1.ArrayOfString GetAllUsersByEmail() {
+            WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest inValue = new WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUsersByEmailRequestBody();
+            WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUsersByEmail(inValue);
+            return retVal.Body.GetAllUsersByEmailResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByNameResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetAllUsersByNameAsync(WindowClientSide.ServiceReference1.GetAllUsersByNameRequest request) {
-            return base.Channel.GetAllUsersByNameAsync(request);
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetAllUsersByEmailAsync(WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest request) {
+            return base.Channel.GetAllUsersByEmailAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByNameResponse> GetAllUsersByNameAsync() {
-            WindowClientSide.ServiceReference1.GetAllUsersByNameRequest inValue = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequest();
-            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUsersByNameRequestBody();
-            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUsersByNameAsync(inValue);
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse> GetAllUsersByEmailAsync() {
+            WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest inValue = new WindowClientSide.ServiceReference1.GetAllUsersByEmailRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUsersByEmailRequestBody();
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUsersByEmailAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

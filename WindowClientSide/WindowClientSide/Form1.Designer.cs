@@ -84,12 +84,13 @@
             this.addProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayProjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addSprintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displaySprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -568,14 +569,14 @@
             // addProjectToolStripMenuItem
             // 
             this.addProjectToolStripMenuItem.Name = "addProjectToolStripMenuItem";
-            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
             this.addProjectToolStripMenuItem.Text = "Add Project";
             this.addProjectToolStripMenuItem.Click += new System.EventHandler(this.addProjectToolStripMenuItem_Click);
             // 
             // displayProjectsToolStripMenuItem
             // 
             this.displayProjectsToolStripMenuItem.Name = "displayProjectsToolStripMenuItem";
-            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
             this.displayProjectsToolStripMenuItem.Text = "Display Projects";
             this.displayProjectsToolStripMenuItem.Click += new System.EventHandler(this.displayProjectsToolStripMenuItem_Click);
             // 
@@ -589,8 +590,24 @@
             this.sprintsToolStripMenuItem.Text = "Sprints";
             this.sprintsToolStripMenuItem.Click += new System.EventHandler(this.sprintsToolStripMenuItem_Click);
             // 
+            // addSprintToolStripMenuItem
+            // 
+            this.addSprintToolStripMenuItem.Name = "addSprintToolStripMenuItem";
+            this.addSprintToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.addSprintToolStripMenuItem.Text = "Add Sprint";
+            this.addSprintToolStripMenuItem.Click += new System.EventHandler(this.addSprintToolStripMenuItem_Click);
+            // 
+            // displaySprintsToolStripMenuItem
+            // 
+            this.displaySprintsToolStripMenuItem.Name = "displaySprintsToolStripMenuItem";
+            this.displaySprintsToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.displaySprintsToolStripMenuItem.Text = "Display Sprints";
+            this.displaySprintsToolStripMenuItem.Click += new System.EventHandler(this.displaySprintsToolStripMenuItem_Click);
+            // 
             // allTasksToolStripMenuItem
             // 
+            this.allTasksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addTaskToolStripMenuItem});
             this.allTasksToolStripMenuItem.Name = "allTasksToolStripMenuItem";
             this.allTasksToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.allTasksToolStripMenuItem.Text = "All Tasks";
@@ -604,31 +621,25 @@
             this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.allUsersToolStripMenuItem.Text = "All Users";
             // 
-            // addSprintToolStripMenuItem
-            // 
-            this.addSprintToolStripMenuItem.Name = "addSprintToolStripMenuItem";
-            this.addSprintToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addSprintToolStripMenuItem.Text = "Add Sprint";
-            this.addSprintToolStripMenuItem.Click += new System.EventHandler(this.addSprintToolStripMenuItem_Click);
-            // 
-            // displaySprintsToolStripMenuItem
-            // 
-            this.displaySprintsToolStripMenuItem.Name = "displaySprintsToolStripMenuItem";
-            this.displaySprintsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.displaySprintsToolStripMenuItem.Text = "Display Sprints";
-            this.displaySprintsToolStripMenuItem.Click += new System.EventHandler(this.displaySprintsToolStripMenuItem_Click);
-            // 
             // addUserToolStripMenuItem
             // 
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
             this.addUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addUserToolStripMenuItem.Text = "Add User";
+            this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
             // displayUsersToolStripMenuItem
             // 
             this.displayUsersToolStripMenuItem.Name = "displayUsersToolStripMenuItem";
             this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.displayUsersToolStripMenuItem.Text = "Display Users";
+            this.displayUsersToolStripMenuItem.Click += new System.EventHandler(this.displayUsersToolStripMenuItem_Click);
+            // 
+            // addTaskToolStripMenuItem
+            // 
+            this.addTaskToolStripMenuItem.Name = "addTaskToolStripMenuItem";
+            this.addTaskToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addTaskToolStripMenuItem.Text = "Add Task";
             // 
             // Form1
             // 
@@ -761,6 +772,7 @@
         private System.Windows.Forms.ToolStripMenuItem displaySprintsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayUsersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addTaskToolStripMenuItem;
     }
 }
 
