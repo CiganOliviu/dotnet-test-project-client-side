@@ -6,6 +6,7 @@ namespace WindowClientSide
     public partial class Form1 : Form
     {
         public ServiceReference1.WebService1SoapClient service;
+        private Boolean flag = true;
 
         public Form1()
         {
@@ -109,9 +110,8 @@ namespace WindowClientSide
             taskForm.Show();
         }
 
-        private void openColumn_SelectedIndexChanged(object sender, EventArgs e)
+        private void populateInfoTabs(string selectedTask)
         {
-            var selectedTask = openColumn.SelectedItem.ToString();
             var taskInfo = service.GetAllTaskInfoByTitle(selectedTask);
             string[] splitInfo = taskInfo.Split('-');
 
@@ -143,13 +143,114 @@ namespace WindowClientSide
 
             var sprint = service.GetSprintInfoById(int.Parse(splitInfo[5]));
             string[] splitSprintinfo = sprint.Split('-');
-            sprintNameBox.Text = splitSprintinfo[1];    
-            sprintPeriodBox .Text = splitSprintinfo[2];
+            sprintNameBox.Text = splitSprintinfo[1];
+            sprintPeriodBox.Text = splitSprintinfo[2];
             sprintProductIncrementVersion.Text = splitSprintinfo[3];
+        }
+        private void openColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (openColumn.SelectedItems != null && flag == true)
+            {
+                var selectedTask = openColumn.SelectedItem.ToString();
+                populateInfoTabs(selectedTask);
+            }
+
+            flag = true;
         }
 
         private void titleBox_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            titleBox.Text = "";
+            descriptionBox.Text = "";
+            estimationBox.Text = "";
+            priorityBox.Text = "";
+            statusBox.Text = "";
+            labelsBox.Text = "";
+            createdAtBox.Text = "";
+
+            firstNameBox.Text = "";
+            lastNameBox.Text = "";
+            emailBox.Text = "";
+            roleBox.Text = "";
+
+            firstNameResponsibleBox.Text = "";
+            lastNameResponsibleBox.Text = "";
+            emailResponsibleBox.Text = "";
+            roleResponsibleBox.Text = "";
+            
+            ProjectName.Text = "";
+
+            sprintNameBox.Text = "";
+            sprintPeriodBox.Text = "";
+            sprintProductIncrementVersion.Text = "";
+            flag = false;
+
+            openColumn.ClearSelected();
+            progressColumn.ClearSelected();
+            blockedColumn.ClearSelected();
+            codeReviewColumn.ClearSelected();
+            qaColumn.ClearSelected();
+            closedColumn.ClearSelected();
+        }
+
+        private void progressColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (progressColumn.SelectedItems != null && flag == true)
+            {
+                var selectedTask = progressColumn.SelectedItem.ToString();
+                populateInfoTabs(selectedTask);
+            }
+
+            flag = true;
+        }
+
+        private void blockedColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (blockedColumn.SelectedItems != null && flag == true)
+            {
+                var selectedTask = blockedColumn.SelectedItem.ToString();
+                populateInfoTabs(selectedTask);
+            }
+
+            flag = true;
+        }
+
+        private void codeReviewColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (codeReviewColumn.SelectedItems != null && flag == true)
+            {
+                var selectedTask = codeReviewColumn.SelectedItem.ToString();
+                populateInfoTabs(selectedTask);
+            }
+
+            flag = true;
+        }
+
+        private void qaColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (qaColumn.SelectedItems != null && flag == true)
+            {
+                var selectedTask = qaColumn.SelectedItem.ToString();
+                populateInfoTabs(selectedTask);
+            }
+
+            flag = true;
+        }
+
+        private void closedColumn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (closedColumn.SelectedItems != null && flag == true)
+            {
+                var selectedTask = closedColumn.SelectedItem.ToString();
+                populateInfoTabs(selectedTask);
+            }
+
+            flag = true;
         }
     }
 }

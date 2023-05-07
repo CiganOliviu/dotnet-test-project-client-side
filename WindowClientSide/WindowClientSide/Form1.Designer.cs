@@ -90,6 +90,7 @@
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,6 +122,7 @@
             this.progressColumn.Name = "progressColumn";
             this.progressColumn.Size = new System.Drawing.Size(197, 260);
             this.progressColumn.TabIndex = 2;
+            this.progressColumn.SelectedIndexChanged += new System.EventHandler(this.progressColumn_SelectedIndexChanged);
             // 
             // blockedColumn
             // 
@@ -130,6 +132,7 @@
             this.blockedColumn.Name = "blockedColumn";
             this.blockedColumn.Size = new System.Drawing.Size(197, 260);
             this.blockedColumn.TabIndex = 3;
+            this.blockedColumn.SelectedIndexChanged += new System.EventHandler(this.blockedColumn_SelectedIndexChanged);
             // 
             // codeReviewColumn
             // 
@@ -139,6 +142,7 @@
             this.codeReviewColumn.Name = "codeReviewColumn";
             this.codeReviewColumn.Size = new System.Drawing.Size(197, 260);
             this.codeReviewColumn.TabIndex = 4;
+            this.codeReviewColumn.SelectedIndexChanged += new System.EventHandler(this.codeReviewColumn_SelectedIndexChanged);
             // 
             // qaColumn
             // 
@@ -148,6 +152,7 @@
             this.qaColumn.Name = "qaColumn";
             this.qaColumn.Size = new System.Drawing.Size(197, 260);
             this.qaColumn.TabIndex = 5;
+            this.qaColumn.SelectedIndexChanged += new System.EventHandler(this.qaColumn_SelectedIndexChanged);
             // 
             // closedColumn
             // 
@@ -157,6 +162,7 @@
             this.closedColumn.Name = "closedColumn";
             this.closedColumn.Size = new System.Drawing.Size(197, 260);
             this.closedColumn.TabIndex = 6;
+            this.closedColumn.SelectedIndexChanged += new System.EventHandler(this.closedColumn_SelectedIndexChanged);
             // 
             // inProgressLabel
             // 
@@ -635,11 +641,22 @@
             this.displayUsersToolStripMenuItem.Text = "Display Users";
             this.displayUsersToolStripMenuItem.Click += new System.EventHandler(this.displayUsersToolStripMenuItem_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1348, 979);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 23);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "Clear Select";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1531, 1026);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.sprintProductIncrementVersion);
             this.Controls.Add(this.sprintPeriodBox);
             this.Controls.Add(this.sprintNameBox);
@@ -766,6 +783,7 @@
         private System.Windows.Forms.ToolStripMenuItem displaySprintsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayUsersToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 
