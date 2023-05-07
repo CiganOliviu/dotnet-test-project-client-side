@@ -113,6 +113,34 @@ namespace WindowClientSide.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllTasksByStatus", ReplyAction="*")]
         System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllTasksByStatusResponse> GetAllTasksByStatusAsync(WindowClientSide.ServiceReference1.GetAllTasksByStatusRequest request);
+        
+        // CODEGEN: Generating message contract since element name title from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllTaskInfoByTitle", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse GetAllTaskInfoByTitle(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllTaskInfoByTitle", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse> GetAllTaskInfoByTitleAsync(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllUserInfoByIdResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUserInfoById", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse GetAllUserInfoById(WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUserInfoById", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse> GetAllUserInfoByIdAsync(WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetProjectInfoByIdResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetProjectInfoById", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetProjectInfoByIdResponse GetProjectInfoById(WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetProjectInfoById", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetProjectInfoByIdResponse> GetProjectInfoByIdAsync(WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetSprintInfoByIdResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSprintInfoById", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetSprintInfoByIdResponse GetSprintInfoById(WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSprintInfoById", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetSprintInfoByIdResponse> GetSprintInfoByIdAsync(WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -926,6 +954,278 @@ namespace WindowClientSide.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllTaskInfoByTitleRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllTaskInfoByTitle", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequestBody Body;
+        
+        public GetAllTaskInfoByTitleRequest() {
+        }
+        
+        public GetAllTaskInfoByTitleRequest(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllTaskInfoByTitleRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string title;
+        
+        public GetAllTaskInfoByTitleRequestBody() {
+        }
+        
+        public GetAllTaskInfoByTitleRequestBody(string title) {
+            this.title = title;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllTaskInfoByTitleResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllTaskInfoByTitleResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponseBody Body;
+        
+        public GetAllTaskInfoByTitleResponse() {
+        }
+        
+        public GetAllTaskInfoByTitleResponse(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllTaskInfoByTitleResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetAllTaskInfoByTitleResult;
+        
+        public GetAllTaskInfoByTitleResponseBody() {
+        }
+        
+        public GetAllTaskInfoByTitleResponseBody(string GetAllTaskInfoByTitleResult) {
+            this.GetAllTaskInfoByTitleResult = GetAllTaskInfoByTitleResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllUserInfoByIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUserInfoById", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequestBody Body;
+        
+        public GetAllUserInfoByIdRequest() {
+        }
+        
+        public GetAllUserInfoByIdRequest(WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllUserInfoByIdRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetAllUserInfoByIdRequestBody() {
+        }
+        
+        public GetAllUserInfoByIdRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllUserInfoByIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUserInfoByIdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponseBody Body;
+        
+        public GetAllUserInfoByIdResponse() {
+        }
+        
+        public GetAllUserInfoByIdResponse(WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllUserInfoByIdResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetAllUserInfoByIdResult;
+        
+        public GetAllUserInfoByIdResponseBody() {
+        }
+        
+        public GetAllUserInfoByIdResponseBody(string GetAllUserInfoByIdResult) {
+            this.GetAllUserInfoByIdResult = GetAllUserInfoByIdResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetProjectInfoByIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectInfoById", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetProjectInfoByIdRequestBody Body;
+        
+        public GetProjectInfoByIdRequest() {
+        }
+        
+        public GetProjectInfoByIdRequest(WindowClientSide.ServiceReference1.GetProjectInfoByIdRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetProjectInfoByIdRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetProjectInfoByIdRequestBody() {
+        }
+        
+        public GetProjectInfoByIdRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetProjectInfoByIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetProjectInfoByIdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetProjectInfoByIdResponseBody Body;
+        
+        public GetProjectInfoByIdResponse() {
+        }
+        
+        public GetProjectInfoByIdResponse(WindowClientSide.ServiceReference1.GetProjectInfoByIdResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetProjectInfoByIdResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetProjectInfoByIdResult;
+        
+        public GetProjectInfoByIdResponseBody() {
+        }
+        
+        public GetProjectInfoByIdResponseBody(string GetProjectInfoByIdResult) {
+            this.GetProjectInfoByIdResult = GetProjectInfoByIdResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetSprintInfoByIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetSprintInfoById", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetSprintInfoByIdRequestBody Body;
+        
+        public GetSprintInfoByIdRequest() {
+        }
+        
+        public GetSprintInfoByIdRequest(WindowClientSide.ServiceReference1.GetSprintInfoByIdRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetSprintInfoByIdRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetSprintInfoByIdRequestBody() {
+        }
+        
+        public GetSprintInfoByIdRequestBody(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetSprintInfoByIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetSprintInfoByIdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetSprintInfoByIdResponseBody Body;
+        
+        public GetSprintInfoByIdResponse() {
+        }
+        
+        public GetSprintInfoByIdResponse(WindowClientSide.ServiceReference1.GetSprintInfoByIdResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetSprintInfoByIdResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetSprintInfoByIdResult;
+        
+        public GetSprintInfoByIdResponseBody() {
+        }
+        
+        public GetSprintInfoByIdResponseBody(string GetSprintInfoByIdResult) {
+            this.GetSprintInfoByIdResult = GetSprintInfoByIdResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebService1SoapChannel : WindowClientSide.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
@@ -1280,6 +1580,106 @@ namespace WindowClientSide.ServiceReference1 {
             inValue.Body = new WindowClientSide.ServiceReference1.GetAllTasksByStatusRequestBody();
             inValue.Body.status = status;
             return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllTasksByStatusAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse WindowClientSide.ServiceReference1.WebService1Soap.GetAllTaskInfoByTitle(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest request) {
+            return base.Channel.GetAllTaskInfoByTitle(request);
+        }
+        
+        public string GetAllTaskInfoByTitle(string title) {
+            WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest inValue = new WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequestBody();
+            inValue.Body.title = title;
+            WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllTaskInfoByTitle(inValue);
+            return retVal.Body.GetAllTaskInfoByTitleResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetAllTaskInfoByTitleAsync(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest request) {
+            return base.Channel.GetAllTaskInfoByTitleAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse> GetAllTaskInfoByTitleAsync(string title) {
+            WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest inValue = new WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequestBody();
+            inValue.Body.title = title;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllTaskInfoByTitleAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse WindowClientSide.ServiceReference1.WebService1Soap.GetAllUserInfoById(WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest request) {
+            return base.Channel.GetAllUserInfoById(request);
+        }
+        
+        public string GetAllUserInfoById(int id) {
+            WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest inValue = new WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequestBody();
+            inValue.Body.id = id;
+            WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUserInfoById(inValue);
+            return retVal.Body.GetAllUserInfoByIdResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetAllUserInfoByIdAsync(WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest request) {
+            return base.Channel.GetAllUserInfoByIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse> GetAllUserInfoByIdAsync(int id) {
+            WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest inValue = new WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequestBody();
+            inValue.Body.id = id;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllUserInfoByIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.GetProjectInfoByIdResponse WindowClientSide.ServiceReference1.WebService1Soap.GetProjectInfoById(WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest request) {
+            return base.Channel.GetProjectInfoById(request);
+        }
+        
+        public string GetProjectInfoById(int id) {
+            WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest inValue = new WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetProjectInfoByIdRequestBody();
+            inValue.Body.id = id;
+            WindowClientSide.ServiceReference1.GetProjectInfoByIdResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetProjectInfoById(inValue);
+            return retVal.Body.GetProjectInfoByIdResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetProjectInfoByIdResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetProjectInfoByIdAsync(WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest request) {
+            return base.Channel.GetProjectInfoByIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetProjectInfoByIdResponse> GetProjectInfoByIdAsync(int id) {
+            WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest inValue = new WindowClientSide.ServiceReference1.GetProjectInfoByIdRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetProjectInfoByIdRequestBody();
+            inValue.Body.id = id;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetProjectInfoByIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.GetSprintInfoByIdResponse WindowClientSide.ServiceReference1.WebService1Soap.GetSprintInfoById(WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest request) {
+            return base.Channel.GetSprintInfoById(request);
+        }
+        
+        public string GetSprintInfoById(int id) {
+            WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest inValue = new WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetSprintInfoByIdRequestBody();
+            inValue.Body.id = id;
+            WindowClientSide.ServiceReference1.GetSprintInfoByIdResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetSprintInfoById(inValue);
+            return retVal.Body.GetSprintInfoByIdResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetSprintInfoByIdResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetSprintInfoByIdAsync(WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest request) {
+            return base.Channel.GetSprintInfoByIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetSprintInfoByIdResponse> GetSprintInfoByIdAsync(int id) {
+            WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest inValue = new WindowClientSide.ServiceReference1.GetSprintInfoByIdRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetSprintInfoByIdRequestBody();
+            inValue.Body.id = id;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetSprintInfoByIdAsync(inValue);
         }
     }
 }

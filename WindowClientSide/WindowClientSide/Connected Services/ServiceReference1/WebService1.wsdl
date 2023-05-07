@@ -159,6 +159,62 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetAllTaskInfoByTitle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllTaskInfoByTitleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTaskInfoByTitleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllUserInfoById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllUserInfoByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUserInfoByIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectInfoById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectInfoByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectInfoByIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSprintInfoById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSprintInfoByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSprintInfoByIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="AddDataInProjectTableSoapIn">
@@ -239,6 +295,30 @@
   <wsdl:message name="GetAllTasksByStatusSoapOut">
     <wsdl:part name="parameters" element="tns:GetAllTasksByStatusResponse" />
   </wsdl:message>
+  <wsdl:message name="GetAllTaskInfoByTitleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTaskInfoByTitle" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTaskInfoByTitleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTaskInfoByTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUserInfoByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUserInfoById" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUserInfoByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUserInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectInfoByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectInfoById" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectInfoByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSprintInfoByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSprintInfoById" />
+  </wsdl:message>
+  <wsdl:message name="GetSprintInfoByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSprintInfoByIdResponse" />
+  </wsdl:message>
   <wsdl:portType name="WebService1Soap">
     <wsdl:operation name="AddDataInProjectTable">
       <wsdl:input message="tns:AddDataInProjectTableSoapIn" />
@@ -291,6 +371,22 @@
     <wsdl:operation name="GetAllTasksByStatus">
       <wsdl:input message="tns:GetAllTasksByStatusSoapIn" />
       <wsdl:output message="tns:GetAllTasksByStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTaskInfoByTitle">
+      <wsdl:input message="tns:GetAllTaskInfoByTitleSoapIn" />
+      <wsdl:output message="tns:GetAllTaskInfoByTitleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserInfoById">
+      <wsdl:input message="tns:GetAllUserInfoByIdSoapIn" />
+      <wsdl:output message="tns:GetAllUserInfoByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfoById">
+      <wsdl:input message="tns:GetProjectInfoByIdSoapIn" />
+      <wsdl:output message="tns:GetProjectInfoByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSprintInfoById">
+      <wsdl:input message="tns:GetSprintInfoByIdSoapIn" />
+      <wsdl:output message="tns:GetSprintInfoByIdSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
@@ -412,6 +508,42 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetAllTaskInfoByTitle">
+      <soap:operation soapAction="http://tempuri.org/GetAllTaskInfoByTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserInfoById">
+      <soap:operation soapAction="http://tempuri.org/GetAllUserInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfoById">
+      <soap:operation soapAction="http://tempuri.org/GetProjectInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSprintInfoById">
+      <soap:operation soapAction="http://tempuri.org/GetSprintInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -525,6 +657,42 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllTasksByStatus">
       <soap12:operation soapAction="http://tempuri.org/GetAllTasksByStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTaskInfoByTitle">
+      <soap12:operation soapAction="http://tempuri.org/GetAllTaskInfoByTitle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserInfoById">
+      <soap12:operation soapAction="http://tempuri.org/GetAllUserInfoById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectInfoById">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectInfoById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSprintInfoById">
+      <soap12:operation soapAction="http://tempuri.org/GetSprintInfoById" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

@@ -101,6 +101,7 @@
             this.openColumn.Name = "openColumn";
             this.openColumn.Size = new System.Drawing.Size(197, 260);
             this.openColumn.TabIndex = 0;
+            this.openColumn.SelectedIndexChanged += new System.EventHandler(this.openColumn_SelectedIndexChanged);
             // 
             // openLabel
             // 
@@ -223,6 +224,7 @@
             this.titleBox.Name = "titleBox";
             this.titleBox.Size = new System.Drawing.Size(149, 22);
             this.titleBox.TabIndex = 13;
+            this.titleBox.TextChanged += new System.EventHandler(this.titleBox_TextChanged);
             // 
             // label1
             // 
