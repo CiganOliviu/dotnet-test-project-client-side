@@ -12,7 +12,7 @@ namespace WindowClientSide
             InitializeComponent();
             service = new ServiceReference1.WebService1SoapClient();
 
-            foreach (string item in service.GetAllProjectsByName())
+            foreach (string item in service.GetAllSprintsByName())
             {
                 sprintsListBox.Items.Add(item);
             }

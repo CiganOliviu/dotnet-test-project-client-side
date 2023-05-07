@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.deleteProjectByName = new System.Windows.Forms.Button();
+            this.deleteSprintByName = new System.Windows.Forms.Button();
             this.sprintsListBox = new System.Windows.Forms.ListBox();
             this.Projects = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // deleteProjectByName
+            // deleteSprintByName
             // 
-            this.deleteProjectByName.Location = new System.Drawing.Point(341, 400);
-            this.deleteProjectByName.Name = "deleteProjectByName";
-            this.deleteProjectByName.Size = new System.Drawing.Size(130, 35);
-            this.deleteProjectByName.TabIndex = 5;
-            this.deleteProjectByName.Text = "Delete Project";
-            this.deleteProjectByName.UseVisualStyleBackColor = true;
-            this.deleteProjectByName.Click += new System.EventHandler(this.deleteProjectByName_Click);
+            this.deleteSprintByName.Location = new System.Drawing.Point(341, 400);
+            this.deleteSprintByName.Name = "deleteSprintByName";
+            this.deleteSprintByName.Size = new System.Drawing.Size(130, 35);
+            this.deleteSprintByName.TabIndex = 5;
+            this.deleteSprintByName.Text = "Delete Sprint";
+            this.deleteSprintByName.UseVisualStyleBackColor = true;
+            this.deleteSprintByName.Click += new System.EventHandler(this.deleteProjectByName_Click);
             // 
             // sprintsListBox
             // 
@@ -67,7 +67,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.deleteProjectByName);
+            this.Controls.Add(this.deleteSprintByName);
             this.Controls.Add(this.sprintsListBox);
             this.Controls.Add(this.Projects);
             this.Name = "SprintForm2";
@@ -79,7 +79,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button deleteProjectByName;
+        private System.Windows.Forms.Button deleteSprintByName;
         private System.Windows.Forms.ListBox sprintsListBox;
         private System.Windows.Forms.Label Projects;
     }

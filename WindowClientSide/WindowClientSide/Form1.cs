@@ -30,5 +30,17 @@ namespace WindowClientSide
             Form2 projectsForm = new Form2();
             projectsForm.Show();
         }
+
+        private void addSprintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SprintsForm1 sprintsForm = new SprintsForm1();
+            sprintsForm.Show();
+        }
+
+        private void displaySprintsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SprintForm2 sprintsForm = new SprintForm2();
+            sprintsForm.Show();
+        }
     }
 }

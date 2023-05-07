@@ -81,11 +81,13 @@
             this.sprintProductIncrementVersion = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayProjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.displayProjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addSprintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displaySprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -512,7 +514,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(1344, 578);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 25);
+            this.label16.Size = new System.Drawing.Size(53, 20);
             this.label16.TabIndex = 47;
             this.label16.Text = "Sprint";
             // 
@@ -561,8 +563,25 @@
             this.projectsToolStripMenuItem.Text = "Projects";
             this.projectsToolStripMenuItem.Click += new System.EventHandler(this.projectsToolStripMenuItem_Click);
             // 
+            // addProjectToolStripMenuItem
+            // 
+            this.addProjectToolStripMenuItem.Name = "addProjectToolStripMenuItem";
+            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addProjectToolStripMenuItem.Text = "Add Project";
+            this.addProjectToolStripMenuItem.Click += new System.EventHandler(this.addProjectToolStripMenuItem_Click);
+            // 
+            // displayProjectsToolStripMenuItem
+            // 
+            this.displayProjectsToolStripMenuItem.Name = "displayProjectsToolStripMenuItem";
+            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayProjectsToolStripMenuItem.Text = "Display Projects";
+            this.displayProjectsToolStripMenuItem.Click += new System.EventHandler(this.displayProjectsToolStripMenuItem_Click);
+            // 
             // sprintsToolStripMenuItem
             // 
+            this.sprintsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addSprintToolStripMenuItem,
+            this.displaySprintsToolStripMenuItem});
             this.sprintsToolStripMenuItem.Name = "sprintsToolStripMenuItem";
             this.sprintsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.sprintsToolStripMenuItem.Text = "Sprints";
@@ -579,19 +598,19 @@
             this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.allUsersToolStripMenuItem.Text = "All Users";
             // 
-            // addProjectToolStripMenuItem
+            // addSprintToolStripMenuItem
             // 
-            this.addProjectToolStripMenuItem.Name = "addProjectToolStripMenuItem";
-            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addProjectToolStripMenuItem.Text = "Add Project";
-            this.addProjectToolStripMenuItem.Click += new System.EventHandler(this.addProjectToolStripMenuItem_Click);
+            this.addSprintToolStripMenuItem.Name = "addSprintToolStripMenuItem";
+            this.addSprintToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addSprintToolStripMenuItem.Text = "Add Sprint";
+            this.addSprintToolStripMenuItem.Click += new System.EventHandler(this.addSprintToolStripMenuItem_Click);
             // 
-            // displayProjectsToolStripMenuItem
+            // displaySprintsToolStripMenuItem
             // 
-            this.displayProjectsToolStripMenuItem.Name = "displayProjectsToolStripMenuItem";
-            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.displayProjectsToolStripMenuItem.Text = "Display Projects";
-            this.displayProjectsToolStripMenuItem.Click += new System.EventHandler(this.displayProjectsToolStripMenuItem_Click);
+            this.displaySprintsToolStripMenuItem.Name = "displaySprintsToolStripMenuItem";
+            this.displaySprintsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displaySprintsToolStripMenuItem.Text = "Display Sprints";
+            this.displaySprintsToolStripMenuItem.Click += new System.EventHandler(this.displaySprintsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -720,6 +739,8 @@
         private System.Windows.Forms.ToolStripMenuItem allUsersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addProjectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayProjectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addSprintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displaySprintsToolStripMenuItem;
     }
 }
 
