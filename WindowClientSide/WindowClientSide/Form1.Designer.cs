@@ -55,6 +55,36 @@
             this.labelsBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.createdAtBox = new System.Windows.Forms.TextBox();
+            this.reporterLabel = new System.Windows.Forms.Label();
+            this.firstNameBox = new System.Windows.Forms.TextBox();
+            this.lastNameBox = new System.Windows.Forms.TextBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.roleBox = new System.Windows.Forms.TextBox();
+            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.lastNameLabel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.roleResponsibleBox = new System.Windows.Forms.TextBox();
+            this.emailResponsibleBox = new System.Windows.Forms.TextBox();
+            this.lastNameResponsibleBox = new System.Windows.Forms.TextBox();
+            this.firstNameResponsibleBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.ProjectName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.sprintNameBox = new System.Windows.Forms.TextBox();
+            this.sprintPeriodBox = new System.Windows.Forms.TextBox();
+            this.sprintProductIncrementVersion = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // openColumn
@@ -177,7 +207,7 @@
             this.labelTaskDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTaskDetails.Location = new System.Drawing.Point(62, 524);
             this.labelTaskDetails.Name = "labelTaskDetails";
-            this.labelTaskDetails.Size = new System.Drawing.Size(183, 36);
+            this.labelTaskDetails.Size = new System.Drawing.Size(146, 29);
             this.labelTaskDetails.TabIndex = 12;
             this.labelTaskDetails.Text = "Task Details";
             // 
@@ -194,7 +224,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(96, 590);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 25);
+            this.label1.Size = new System.Drawing.Size(41, 20);
             this.label1.TabIndex = 14;
             this.label1.Text = "Title";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -301,11 +331,278 @@
             this.createdAtBox.Size = new System.Drawing.Size(149, 22);
             this.createdAtBox.TabIndex = 25;
             // 
+            // reporterLabel
+            // 
+            this.reporterLabel.AutoSize = true;
+            this.reporterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reporterLabel.Location = new System.Drawing.Point(516, 578);
+            this.reporterLabel.Name = "reporterLabel";
+            this.reporterLabel.Size = new System.Drawing.Size(74, 20);
+            this.reporterLabel.TabIndex = 27;
+            this.reporterLabel.Text = "Reporter";
+            // 
+            // firstNameBox
+            // 
+            this.firstNameBox.Location = new System.Drawing.Point(537, 634);
+            this.firstNameBox.Name = "firstNameBox";
+            this.firstNameBox.Size = new System.Drawing.Size(149, 22);
+            this.firstNameBox.TabIndex = 28;
+            // 
+            // lastNameBox
+            // 
+            this.lastNameBox.Location = new System.Drawing.Point(537, 682);
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(149, 22);
+            this.lastNameBox.TabIndex = 29;
+            // 
+            // emailBox
+            // 
+            this.emailBox.Location = new System.Drawing.Point(537, 729);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(149, 22);
+            this.emailBox.TabIndex = 30;
+            // 
+            // roleBox
+            // 
+            this.roleBox.Location = new System.Drawing.Point(537, 782);
+            this.roleBox.Name = "roleBox";
+            this.roleBox.Size = new System.Drawing.Size(149, 22);
+            this.roleBox.TabIndex = 31;
+            // 
+            // firstNameLabel
+            // 
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameLabel.Location = new System.Drawing.Point(416, 634);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(92, 20);
+            this.firstNameLabel.TabIndex = 32;
+            this.firstNameLabel.Text = "First Name";
+            // 
+            // lastNameLabel
+            // 
+            this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameLabel.Location = new System.Drawing.Point(416, 682);
+            this.lastNameLabel.Name = "lastNameLabel";
+            this.lastNameLabel.Size = new System.Drawing.Size(91, 20);
+            this.lastNameLabel.TabIndex = 33;
+            this.lastNameLabel.Text = "Last Name";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(433, 729);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 20);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Email";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(441, 784);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 20);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "Role";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(765, 784);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 20);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Role";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(757, 729);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 20);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "Email";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(740, 682);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 20);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Last Name";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(740, 634);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 20);
+            this.label13.TabIndex = 41;
+            this.label13.Text = "First Name";
+            // 
+            // roleResponsibleBox
+            // 
+            this.roleResponsibleBox.Location = new System.Drawing.Point(861, 782);
+            this.roleResponsibleBox.Name = "roleResponsibleBox";
+            this.roleResponsibleBox.Size = new System.Drawing.Size(149, 22);
+            this.roleResponsibleBox.TabIndex = 40;
+            // 
+            // emailResponsibleBox
+            // 
+            this.emailResponsibleBox.Location = new System.Drawing.Point(861, 729);
+            this.emailResponsibleBox.Name = "emailResponsibleBox";
+            this.emailResponsibleBox.Size = new System.Drawing.Size(149, 22);
+            this.emailResponsibleBox.TabIndex = 39;
+            // 
+            // lastNameResponsibleBox
+            // 
+            this.lastNameResponsibleBox.Location = new System.Drawing.Point(861, 682);
+            this.lastNameResponsibleBox.Name = "lastNameResponsibleBox";
+            this.lastNameResponsibleBox.Size = new System.Drawing.Size(149, 22);
+            this.lastNameResponsibleBox.TabIndex = 38;
+            // 
+            // firstNameResponsibleBox
+            // 
+            this.firstNameResponsibleBox.Location = new System.Drawing.Point(861, 634);
+            this.firstNameResponsibleBox.Name = "firstNameResponsibleBox";
+            this.firstNameResponsibleBox.Size = new System.Drawing.Size(149, 22);
+            this.firstNameResponsibleBox.TabIndex = 37;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(840, 578);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(101, 20);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Responsible";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(1099, 578);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(62, 20);
+            this.label15.TabIndex = 45;
+            this.label15.Text = "Project";
+            // 
+            // ProjectName
+            // 
+            this.ProjectName.Location = new System.Drawing.Point(1062, 632);
+            this.ProjectName.Name = "ProjectName";
+            this.ProjectName.Size = new System.Drawing.Size(149, 22);
+            this.ProjectName.TabIndex = 46;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1344, 578);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(66, 25);
+            this.label16.TabIndex = 47;
+            this.label16.Text = "Sprint";
+            // 
+            // sprintNameBox
+            // 
+            this.sprintNameBox.Location = new System.Drawing.Point(1299, 632);
+            this.sprintNameBox.Name = "sprintNameBox";
+            this.sprintNameBox.Size = new System.Drawing.Size(149, 22);
+            this.sprintNameBox.TabIndex = 48;
+            // 
+            // sprintPeriodBox
+            // 
+            this.sprintPeriodBox.Location = new System.Drawing.Point(1299, 682);
+            this.sprintPeriodBox.Name = "sprintPeriodBox";
+            this.sprintPeriodBox.Size = new System.Drawing.Size(149, 22);
+            this.sprintPeriodBox.TabIndex = 49;
+            // 
+            // sprintProductIncrementVersion
+            // 
+            this.sprintProductIncrementVersion.Location = new System.Drawing.Point(1299, 734);
+            this.sprintProductIncrementVersion.Name = "sprintProductIncrementVersion";
+            this.sprintProductIncrementVersion.Size = new System.Drawing.Size(149, 22);
+            this.sprintProductIncrementVersion.TabIndex = 50;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectsToolStripMenuItem,
+            this.sprintsToolStripMenuItem,
+            this.allTasksToolStripMenuItem,
+            this.allUsersToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1531, 28);
+            this.menuStrip1.TabIndex = 51;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // projectsToolStripMenuItem
+            // 
+            this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
+            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.projectsToolStripMenuItem.Text = "Projects";
+            this.projectsToolStripMenuItem.Click += new System.EventHandler(this.projectsToolStripMenuItem_Click);
+            // 
+            // sprintsToolStripMenuItem
+            // 
+            this.sprintsToolStripMenuItem.Name = "sprintsToolStripMenuItem";
+            this.sprintsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.sprintsToolStripMenuItem.Text = "Sprints";
+            // 
+            // allTasksToolStripMenuItem
+            // 
+            this.allTasksToolStripMenuItem.Name = "allTasksToolStripMenuItem";
+            this.allTasksToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.allTasksToolStripMenuItem.Text = "All Tasks";
+            // 
+            // allUsersToolStripMenuItem
+            // 
+            this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
+            this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.allUsersToolStripMenuItem.Text = "All Users";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1531, 1026);
+            this.Controls.Add(this.sprintProductIncrementVersion);
+            this.Controls.Add(this.sprintPeriodBox);
+            this.Controls.Add(this.sprintNameBox);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.ProjectName);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.roleResponsibleBox);
+            this.Controls.Add(this.emailResponsibleBox);
+            this.Controls.Add(this.lastNameResponsibleBox);
+            this.Controls.Add(this.firstNameResponsibleBox);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lastNameLabel);
+            this.Controls.Add(this.firstNameLabel);
+            this.Controls.Add(this.roleBox);
+            this.Controls.Add(this.emailBox);
+            this.Controls.Add(this.lastNameBox);
+            this.Controls.Add(this.firstNameBox);
+            this.Controls.Add(this.reporterLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.createdAtBox);
             this.Controls.Add(this.label6);
@@ -333,8 +630,12 @@
             this.Controls.Add(this.progressColumn);
             this.Controls.Add(this.openLabel);
             this.Controls.Add(this.openColumn);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,6 +670,35 @@
         private System.Windows.Forms.TextBox labelsBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox createdAtBox;
+        private System.Windows.Forms.Label reporterLabel;
+        private System.Windows.Forms.TextBox firstNameBox;
+        private System.Windows.Forms.TextBox lastNameBox;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox roleBox;
+        private System.Windows.Forms.Label firstNameLabel;
+        private System.Windows.Forms.Label lastNameLabel;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox roleResponsibleBox;
+        private System.Windows.Forms.TextBox emailResponsibleBox;
+        private System.Windows.Forms.TextBox lastNameResponsibleBox;
+        private System.Windows.Forms.TextBox firstNameResponsibleBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox ProjectName;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox sprintNameBox;
+        private System.Windows.Forms.TextBox sprintPeriodBox;
+        private System.Windows.Forms.TextBox sprintProductIncrementVersion;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sprintsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allTasksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allUsersToolStripMenuItem;
     }
 }
 
