@@ -15,3 +15,4 @@ D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\Window
 D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.SprintForm2.resources
 D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.UserForm1.resources
 D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.UserForm2.resources
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.TaskForm.resources

@@ -90,7 +90,6 @@
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -606,11 +605,10 @@
             // 
             // allTasksToolStripMenuItem
             // 
-            this.allTasksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addTaskToolStripMenuItem});
             this.allTasksToolStripMenuItem.Name = "allTasksToolStripMenuItem";
-            this.allTasksToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
-            this.allTasksToolStripMenuItem.Text = "All Tasks";
+            this.allTasksToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.allTasksToolStripMenuItem.Text = "Add Task";
+            this.allTasksToolStripMenuItem.Click += new System.EventHandler(this.allTasksToolStripMenuItem_Click);
             // 
             // allUsersToolStripMenuItem
             // 
@@ -634,12 +632,6 @@
             this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.displayUsersToolStripMenuItem.Text = "Display Users";
             this.displayUsersToolStripMenuItem.Click += new System.EventHandler(this.displayUsersToolStripMenuItem_Click);
-            // 
-            // addTaskToolStripMenuItem
-            // 
-            this.addTaskToolStripMenuItem.Name = "addTaskToolStripMenuItem";
-            this.addTaskToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addTaskToolStripMenuItem.Text = "Add Task";
             // 
             // Form1
             // 
@@ -772,7 +764,6 @@
         private System.Windows.Forms.ToolStripMenuItem displaySprintsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayUsersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addTaskToolStripMenuItem;
     }
 }
 

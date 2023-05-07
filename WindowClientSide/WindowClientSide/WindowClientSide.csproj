@@ -85,6 +85,12 @@
     <Compile Include="SprintsForm1.Designer.cs">
       <DependentUpon>SprintsForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <EmbeddedResource Include="SprintsForm1.resx">
       <DependentUpon>SprintsForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForm1.resx">
       <DependentUpon>UserForm1.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +141,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.AddDataInSprinTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.AddDataInTaskTableResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.AddDataInUserTableResponse.datasource">
@@ -153,6 +165,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.GetAllTasksByTitleResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.GetAllUsersByEmailResponse.datasource">

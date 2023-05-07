@@ -50,14 +50,20 @@ namespace WindowClientSide
 
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UserForm1 sprintsForm = new UserForm1();
-            sprintsForm.Show();
+            UserForm1 usersForm = new UserForm1();
+            usersForm.Show();
         }
 
         private void displayUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UserForm2 sprintsForm = new UserForm2();
-            sprintsForm.Show();
+            UserForm2 usersForm = new UserForm2();
+            usersForm.Show();
+        }
+
+        private void allTasksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TaskForm taskForm = new TaskForm();
+            taskForm.Show();
         }
     }
 }
