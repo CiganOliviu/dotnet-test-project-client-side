@@ -42,5 +42,10 @@ namespace WindowClientSide
             SprintForm2 sprintsForm = new SprintForm2();
             sprintsForm.Show();
         }
+
+        private void sprintsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

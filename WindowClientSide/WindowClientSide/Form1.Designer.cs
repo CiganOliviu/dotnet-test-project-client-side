@@ -88,6 +88,8 @@
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addSprintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displaySprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -585,6 +587,7 @@
             this.sprintsToolStripMenuItem.Name = "sprintsToolStripMenuItem";
             this.sprintsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.sprintsToolStripMenuItem.Text = "Sprints";
+            this.sprintsToolStripMenuItem.Click += new System.EventHandler(this.sprintsToolStripMenuItem_Click);
             // 
             // allTasksToolStripMenuItem
             // 
@@ -594,6 +597,9 @@
             // 
             // allUsersToolStripMenuItem
             // 
+            this.allUsersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addUserToolStripMenuItem,
+            this.displayUsersToolStripMenuItem});
             this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
             this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.allUsersToolStripMenuItem.Text = "All Users";
@@ -611,6 +617,18 @@
             this.displaySprintsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.displaySprintsToolStripMenuItem.Text = "Display Sprints";
             this.displaySprintsToolStripMenuItem.Click += new System.EventHandler(this.displaySprintsToolStripMenuItem_Click);
+            // 
+            // addUserToolStripMenuItem
+            // 
+            this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUserToolStripMenuItem.Text = "Add User";
+            // 
+            // displayUsersToolStripMenuItem
+            // 
+            this.displayUsersToolStripMenuItem.Name = "displayUsersToolStripMenuItem";
+            this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayUsersToolStripMenuItem.Text = "Display Users";
             // 
             // Form1
             // 
@@ -741,6 +759,8 @@
         private System.Windows.Forms.ToolStripMenuItem displayProjectsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addSprintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displaySprintsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayUsersToolStripMenuItem;
     }
 }
 
