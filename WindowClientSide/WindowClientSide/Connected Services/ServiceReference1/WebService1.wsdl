@@ -38,6 +38,49 @@
       <s:element name="DeleteDataInProjectTableByIdResponse">
         <s:complexType />
       </s:element>
+      <s:element name="DeleteDataInProjectTableByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDataInProjectTableByNameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddDataInSprinTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sprintName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sprintPeriod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productIncrementVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDataInSprinTableResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSprintsByName">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSprintsByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSprintsByNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDataInSprintTableByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDataInSprintTableByNameResponse">
+        <s:complexType />
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="AddDataInProjectTableSoapIn">
@@ -58,6 +101,30 @@
   <wsdl:message name="DeleteDataInProjectTableByIdSoapOut">
     <wsdl:part name="parameters" element="tns:DeleteDataInProjectTableByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="DeleteDataInProjectTableByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteDataInProjectTableByName" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataInProjectTableByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDataInProjectTableByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddDataInSprinTableSoapIn">
+    <wsdl:part name="parameters" element="tns:AddDataInSprinTable" />
+  </wsdl:message>
+  <wsdl:message name="AddDataInSprinTableSoapOut">
+    <wsdl:part name="parameters" element="tns:AddDataInSprinTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSprintsByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSprintsByName" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSprintsByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSprintsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataInSprintTableByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteDataInSprintTableByName" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDataInSprintTableByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDataInSprintTableByNameResponse" />
+  </wsdl:message>
   <wsdl:portType name="WebService1Soap">
     <wsdl:operation name="AddDataInProjectTable">
       <wsdl:input message="tns:AddDataInProjectTableSoapIn" />
@@ -70,6 +137,22 @@
     <wsdl:operation name="DeleteDataInProjectTableById">
       <wsdl:input message="tns:DeleteDataInProjectTableByIdSoapIn" />
       <wsdl:output message="tns:DeleteDataInProjectTableByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInProjectTableByName">
+      <wsdl:input message="tns:DeleteDataInProjectTableByNameSoapIn" />
+      <wsdl:output message="tns:DeleteDataInProjectTableByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDataInSprinTable">
+      <wsdl:input message="tns:AddDataInSprinTableSoapIn" />
+      <wsdl:output message="tns:AddDataInSprinTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSprintsByName">
+      <wsdl:input message="tns:GetAllSprintsByNameSoapIn" />
+      <wsdl:output message="tns:GetAllSprintsByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInSprintTableByName">
+      <wsdl:input message="tns:DeleteDataInSprintTableByNameSoapIn" />
+      <wsdl:output message="tns:DeleteDataInSprintTableByNameSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
@@ -101,6 +184,42 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="DeleteDataInProjectTableByName">
+      <soap:operation soapAction="http://tempuri.org/DeleteDataInProjectTableByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDataInSprinTable">
+      <soap:operation soapAction="http://tempuri.org/AddDataInSprinTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSprintsByName">
+      <soap:operation soapAction="http://tempuri.org/GetAllSprintsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInSprintTableByName">
+      <soap:operation soapAction="http://tempuri.org/DeleteDataInSprintTableByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -124,6 +243,42 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteDataInProjectTableById">
       <soap12:operation soapAction="http://tempuri.org/DeleteDataInProjectTableById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInProjectTableByName">
+      <soap12:operation soapAction="http://tempuri.org/DeleteDataInProjectTableByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDataInSprinTable">
+      <soap12:operation soapAction="http://tempuri.org/AddDataInSprinTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSprintsByName">
+      <soap12:operation soapAction="http://tempuri.org/GetAllSprintsByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDataInSprintTableByName">
+      <soap12:operation soapAction="http://tempuri.org/DeleteDataInSprintTableByName" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

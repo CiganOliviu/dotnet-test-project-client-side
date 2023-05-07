@@ -43,6 +43,34 @@ namespace WindowClientSide.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInProjectTableById", ReplyAction="*")]
         System.Threading.Tasks.Task DeleteDataInProjectTableByIdAsync(int id);
+        
+        // CODEGEN: Generating message contract since element name name from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInProjectTableByName", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponse DeleteDataInProjectTableByName(WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInProjectTableByName", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponse> DeleteDataInProjectTableByNameAsync(WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest request);
+        
+        // CODEGEN: Generating message contract since element name sprintName from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInSprinTable", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.AddDataInSprinTableResponse AddDataInSprinTable(WindowClientSide.ServiceReference1.AddDataInSprinTableRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInSprinTable", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInSprinTableResponse> AddDataInSprinTableAsync(WindowClientSide.ServiceReference1.AddDataInSprinTableRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetAllSprintsByNameResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllSprintsByName", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse GetAllSprintsByName(WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllSprintsByName", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse> GetAllSprintsByNameAsync(WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest request);
+        
+        // CODEGEN: Generating message contract since element name name from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInSprintTableByName", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse DeleteDataInSprintTableByName(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInSprintTableByName", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse> DeleteDataInSprintTableByNameAsync(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -171,6 +199,262 @@ namespace WindowClientSide.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteDataInProjectTableByNameRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteDataInProjectTableByName", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequestBody Body;
+        
+        public DeleteDataInProjectTableByNameRequest() {
+        }
+        
+        public DeleteDataInProjectTableByNameRequest(WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteDataInProjectTableByNameRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string name;
+        
+        public DeleteDataInProjectTableByNameRequestBody() {
+        }
+        
+        public DeleteDataInProjectTableByNameRequestBody(string name) {
+            this.name = name;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteDataInProjectTableByNameResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteDataInProjectTableByNameResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponseBody Body;
+        
+        public DeleteDataInProjectTableByNameResponse() {
+        }
+        
+        public DeleteDataInProjectTableByNameResponse(WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class DeleteDataInProjectTableByNameResponseBody {
+        
+        public DeleteDataInProjectTableByNameResponseBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class AddDataInSprinTableRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="AddDataInSprinTable", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.AddDataInSprinTableRequestBody Body;
+        
+        public AddDataInSprinTableRequest() {
+        }
+        
+        public AddDataInSprinTableRequest(WindowClientSide.ServiceReference1.AddDataInSprinTableRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class AddDataInSprinTableRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string sprintName;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string sprintPeriod;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string productIncrementVersion;
+        
+        public AddDataInSprinTableRequestBody() {
+        }
+        
+        public AddDataInSprinTableRequestBody(int id, string sprintName, string sprintPeriod, string productIncrementVersion) {
+            this.id = id;
+            this.sprintName = sprintName;
+            this.sprintPeriod = sprintPeriod;
+            this.productIncrementVersion = productIncrementVersion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class AddDataInSprinTableResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="AddDataInSprinTableResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.AddDataInSprinTableResponseBody Body;
+        
+        public AddDataInSprinTableResponse() {
+        }
+        
+        public AddDataInSprinTableResponse(WindowClientSide.ServiceReference1.AddDataInSprinTableResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class AddDataInSprinTableResponseBody {
+        
+        public AddDataInSprinTableResponseBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllSprintsByNameRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllSprintsByName", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllSprintsByNameRequestBody Body;
+        
+        public GetAllSprintsByNameRequest() {
+        }
+        
+        public GetAllSprintsByNameRequest(WindowClientSide.ServiceReference1.GetAllSprintsByNameRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllSprintsByNameRequestBody {
+        
+        public GetAllSprintsByNameRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllSprintsByNameResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllSprintsByNameResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.GetAllSprintsByNameResponseBody Body;
+        
+        public GetAllSprintsByNameResponse() {
+        }
+        
+        public GetAllSprintsByNameResponse(WindowClientSide.ServiceReference1.GetAllSprintsByNameResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllSprintsByNameResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WindowClientSide.ServiceReference1.ArrayOfString GetAllSprintsByNameResult;
+        
+        public GetAllSprintsByNameResponseBody() {
+        }
+        
+        public GetAllSprintsByNameResponseBody(WindowClientSide.ServiceReference1.ArrayOfString GetAllSprintsByNameResult) {
+            this.GetAllSprintsByNameResult = GetAllSprintsByNameResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteDataInSprintTableByNameRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteDataInSprintTableByName", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequestBody Body;
+        
+        public DeleteDataInSprintTableByNameRequest() {
+        }
+        
+        public DeleteDataInSprintTableByNameRequest(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteDataInSprintTableByNameRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string name;
+        
+        public DeleteDataInSprintTableByNameRequestBody() {
+        }
+        
+        public DeleteDataInSprintTableByNameRequestBody(string name) {
+            this.name = name;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteDataInSprintTableByNameResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteDataInSprintTableByNameResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponseBody Body;
+        
+        public DeleteDataInSprintTableByNameResponse() {
+        }
+        
+        public DeleteDataInSprintTableByNameResponse(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class DeleteDataInSprintTableByNameResponseBody {
+        
+        public DeleteDataInSprintTableByNameResponseBody() {
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebService1SoapChannel : WindowClientSide.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
@@ -253,6 +537,107 @@ namespace WindowClientSide.ServiceReference1 {
         
         public System.Threading.Tasks.Task DeleteDataInProjectTableByIdAsync(int id) {
             return base.Channel.DeleteDataInProjectTableByIdAsync(id);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponse WindowClientSide.ServiceReference1.WebService1Soap.DeleteDataInProjectTableByName(WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest request) {
+            return base.Channel.DeleteDataInProjectTableByName(request);
+        }
+        
+        public void DeleteDataInProjectTableByName(string name) {
+            WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest inValue = new WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequestBody();
+            inValue.Body.name = name;
+            WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInProjectTableByName(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponse> WindowClientSide.ServiceReference1.WebService1Soap.DeleteDataInProjectTableByNameAsync(WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest request) {
+            return base.Channel.DeleteDataInProjectTableByNameAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameResponse> DeleteDataInProjectTableByNameAsync(string name) {
+            WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest inValue = new WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInProjectTableByNameRequestBody();
+            inValue.Body.name = name;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInProjectTableByNameAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.AddDataInSprinTableResponse WindowClientSide.ServiceReference1.WebService1Soap.AddDataInSprinTable(WindowClientSide.ServiceReference1.AddDataInSprinTableRequest request) {
+            return base.Channel.AddDataInSprinTable(request);
+        }
+        
+        public void AddDataInSprinTable(int id, string sprintName, string sprintPeriod, string productIncrementVersion) {
+            WindowClientSide.ServiceReference1.AddDataInSprinTableRequest inValue = new WindowClientSide.ServiceReference1.AddDataInSprinTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.AddDataInSprinTableRequestBody();
+            inValue.Body.id = id;
+            inValue.Body.sprintName = sprintName;
+            inValue.Body.sprintPeriod = sprintPeriod;
+            inValue.Body.productIncrementVersion = productIncrementVersion;
+            WindowClientSide.ServiceReference1.AddDataInSprinTableResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).AddDataInSprinTable(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInSprinTableResponse> WindowClientSide.ServiceReference1.WebService1Soap.AddDataInSprinTableAsync(WindowClientSide.ServiceReference1.AddDataInSprinTableRequest request) {
+            return base.Channel.AddDataInSprinTableAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.AddDataInSprinTableResponse> AddDataInSprinTableAsync(int id, string sprintName, string sprintPeriod, string productIncrementVersion) {
+            WindowClientSide.ServiceReference1.AddDataInSprinTableRequest inValue = new WindowClientSide.ServiceReference1.AddDataInSprinTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.AddDataInSprinTableRequestBody();
+            inValue.Body.id = id;
+            inValue.Body.sprintName = sprintName;
+            inValue.Body.sprintPeriod = sprintPeriod;
+            inValue.Body.productIncrementVersion = productIncrementVersion;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).AddDataInSprinTableAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse WindowClientSide.ServiceReference1.WebService1Soap.GetAllSprintsByName(WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest request) {
+            return base.Channel.GetAllSprintsByName(request);
+        }
+        
+        public WindowClientSide.ServiceReference1.ArrayOfString GetAllSprintsByName() {
+            WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest inValue = new WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllSprintsByNameRequestBody();
+            WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllSprintsByName(inValue);
+            return retVal.Body.GetAllSprintsByNameResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse> WindowClientSide.ServiceReference1.WebService1Soap.GetAllSprintsByNameAsync(WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest request) {
+            return base.Channel.GetAllSprintsByNameAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllSprintsByNameResponse> GetAllSprintsByNameAsync() {
+            WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest inValue = new WindowClientSide.ServiceReference1.GetAllSprintsByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.GetAllSprintsByNameRequestBody();
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllSprintsByNameAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse WindowClientSide.ServiceReference1.WebService1Soap.DeleteDataInSprintTableByName(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest request) {
+            return base.Channel.DeleteDataInSprintTableByName(request);
+        }
+        
+        public void DeleteDataInSprintTableByName(string name) {
+            WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest inValue = new WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequestBody();
+            inValue.Body.name = name;
+            WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInSprintTableByName(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse> WindowClientSide.ServiceReference1.WebService1Soap.DeleteDataInSprintTableByNameAsync(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest request) {
+            return base.Channel.DeleteDataInSprintTableByNameAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse> DeleteDataInSprintTableByNameAsync(string name) {
+            WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest inValue = new WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequestBody();
+            inValue.Body.name = name;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInSprintTableByNameAsync(inValue);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WindowClientSide
 {
-    partial class Form2
+    partial class SprintForm2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,51 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Projects = new System.Windows.Forms.Label();
-            this.projectsListBox = new System.Windows.Forms.ListBox();
             this.deleteProjectByName = new System.Windows.Forms.Button();
+            this.sprintsListBox = new System.Windows.Forms.ListBox();
+            this.Projects = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // deleteProjectByName
+            // 
+            this.deleteProjectByName.Location = new System.Drawing.Point(341, 400);
+            this.deleteProjectByName.Name = "deleteProjectByName";
+            this.deleteProjectByName.Size = new System.Drawing.Size(130, 35);
+            this.deleteProjectByName.TabIndex = 5;
+            this.deleteProjectByName.Text = "Delete Project";
+            this.deleteProjectByName.UseVisualStyleBackColor = true;
+            this.deleteProjectByName.Click += new System.EventHandler(this.deleteProjectByName_Click);
+            // 
+            // sprintsListBox
+            // 
+            this.sprintsListBox.FormattingEnabled = true;
+            this.sprintsListBox.ItemHeight = 16;
+            this.sprintsListBox.Location = new System.Drawing.Point(263, 75);
+            this.sprintsListBox.Name = "sprintsListBox";
+            this.sprintsListBox.Size = new System.Drawing.Size(275, 292);
+            this.sprintsListBox.TabIndex = 4;
             // 
             // Projects
             // 
             this.Projects.AutoSize = true;
             this.Projects.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Projects.Location = new System.Drawing.Point(326, 54);
+            this.Projects.Location = new System.Drawing.Point(352, 23);
             this.Projects.Name = "Projects";
-            this.Projects.Size = new System.Drawing.Size(101, 29);
-            this.Projects.TabIndex = 0;
-            this.Projects.Text = "Projects";
+            this.Projects.Size = new System.Drawing.Size(110, 36);
+            this.Projects.TabIndex = 3;
+            this.Projects.Text = "Sprints";
             // 
-            // projectsListBox
-            // 
-            this.projectsListBox.FormattingEnabled = true;
-            this.projectsListBox.ItemHeight = 16;
-            this.projectsListBox.Location = new System.Drawing.Point(253, 113);
-            this.projectsListBox.Name = "projectsListBox";
-            this.projectsListBox.Size = new System.Drawing.Size(275, 292);
-            this.projectsListBox.TabIndex = 1;
-            this.projectsListBox.SelectedIndexChanged += new System.EventHandler(this.projectsListBox_SelectedIndexChanged);
-            // 
-            // deleteProjectByName
-            // 
-            this.deleteProjectByName.Location = new System.Drawing.Point(331, 438);
-            this.deleteProjectByName.Name = "deleteProjectByName";
-            this.deleteProjectByName.Size = new System.Drawing.Size(130, 35);
-            this.deleteProjectByName.TabIndex = 2;
-            this.deleteProjectByName.Text = "Delete Project";
-            this.deleteProjectByName.UseVisualStyleBackColor = true;
-            this.deleteProjectByName.Click += new System.EventHandler(this.deleteProjectByName_Click);
-            // 
-            // Form2
+            // SprintForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 530);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.deleteProjectByName);
-            this.Controls.Add(this.projectsListBox);
+            this.Controls.Add(this.sprintsListBox);
             this.Controls.Add(this.Projects);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "SprintForm2";
+            this.Text = "SprintForm2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Projects;
-        private System.Windows.Forms.ListBox projectsListBox;
         private System.Windows.Forms.Button deleteProjectByName;
+        private System.Windows.Forms.ListBox sprintsListBox;
+        private System.Windows.Forms.Label Projects;
     }
 }
