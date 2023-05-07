@@ -17,6 +17,16 @@ namespace WindowClientSide
 
         private void projectsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+        }
+
+        private void addProjectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 projectsForm = new Form3();
+            projectsForm.Show();
+        }
+
+        private void displayProjectsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Form2 projectsForm = new Form2();
             projectsForm.Show();
         }

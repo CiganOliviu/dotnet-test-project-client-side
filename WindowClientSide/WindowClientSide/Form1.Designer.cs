@@ -84,6 +84,8 @@
             this.sprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayProjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -551,6 +553,9 @@
             // 
             // projectsToolStripMenuItem
             // 
+            this.projectsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addProjectToolStripMenuItem,
+            this.displayProjectsToolStripMenuItem});
             this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
             this.projectsToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.projectsToolStripMenuItem.Text = "Projects";
@@ -573,6 +578,20 @@
             this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
             this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.allUsersToolStripMenuItem.Text = "All Users";
+            // 
+            // addProjectToolStripMenuItem
+            // 
+            this.addProjectToolStripMenuItem.Name = "addProjectToolStripMenuItem";
+            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addProjectToolStripMenuItem.Text = "Add Project";
+            this.addProjectToolStripMenuItem.Click += new System.EventHandler(this.addProjectToolStripMenuItem_Click);
+            // 
+            // displayProjectsToolStripMenuItem
+            // 
+            this.displayProjectsToolStripMenuItem.Name = "displayProjectsToolStripMenuItem";
+            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayProjectsToolStripMenuItem.Text = "Display Projects";
+            this.displayProjectsToolStripMenuItem.Click += new System.EventHandler(this.displayProjectsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -699,6 +718,8 @@
         private System.Windows.Forms.ToolStripMenuItem sprintsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allTasksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allUsersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addProjectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayProjectsToolStripMenuItem;
     }
 }
 

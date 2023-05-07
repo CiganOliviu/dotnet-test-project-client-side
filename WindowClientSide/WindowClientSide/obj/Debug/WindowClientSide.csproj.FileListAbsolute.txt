@@ -1,0 +1,13 @@
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\bin\Debug\WindowClientSide.exe.config
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\bin\Debug\WindowClientSide.exe
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\bin\Debug\WindowClientSide.pdb
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.csproj.AssemblyReference.cache
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.csproj.SuggestedBindingRedirects.cache
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.Form1.resources
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.Form2.resources
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.Properties.Resources.resources
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.csproj.GenerateResource.cache
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.csproj.CoreCompileInputs.cache
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.exe
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.pdb
+D:\facultate\An3Sem2\II\Lab7-Lab8\Project\dotnet-test-project-client-side\WindowClientSide\WindowClientSide\obj\Debug\WindowClientSide.Form3.resources
