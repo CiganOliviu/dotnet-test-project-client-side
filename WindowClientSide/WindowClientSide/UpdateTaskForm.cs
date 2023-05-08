@@ -15,9 +15,35 @@ namespace WindowClientSide
 
         private void addTaskButtonInput_Click(object sender, EventArgs e)
         {
-            service.UpdateDataInTaskTable(int.Parse(updateTaskIdInputbox.Text), updateTaskTitleBox.Text, updateTaskShortDescriptionBox.Text, int.Parse(updateTaskReporterBox.Text),
-                int.Parse(updateTaskResponsibleBox.Text), int.Parse(updateTaskSprintBox.Text), updateTaskEstimationBox.Text, updateTaskPriorityBox.Text, updateTaskStatusBox.Text,
-                updateTaskLabelsBox.Text, int.Parse(updateTaskProjectBox.Text));
+            var reporterBoxFallback = -1;
+            var responsibleBoxFallback = -1;
+            var sprintBoxFallback = -1;
+            var projectBoxFallback = -1;
+
+            if (updateTaskReporterBox.Text != "")
+            {
+                reporterBoxFallback = int.Parse(updateTaskReporterBox.Text);
+            }
+
+            if (updateTaskResponsibleBox.Text != "")
+            {
+                responsibleBoxFallback = int.Parse(updateTaskResponsibleBox.Text);
+            }
+
+            if (updateTaskResponsibleBox.Text != "")
+            {
+                sprintBoxFallback = int.Parse(updateTaskResponsibleBox.Text);
+            }
+            
+            if (updateTaskProjectBox.Text != "")
+            {
+                projectBoxFallback = int.Parse(updateTaskProjectBox.Text);
+            }
+
+            service.UpdateDataInTaskTable(int.Parse(updateTaskIdInputbox.Text), updateTaskTitleBox.Text, updateTaskShortDescriptionBox.Text, reporterBoxFallback,
+                responsibleBoxFallback, sprintBoxFallback, updateTaskEstimationBox.Text, updateTaskPriorityBox.Text, updateTaskStatusBox.Text,
+                updateTaskLabelsBox.Text, projectBoxFallback);
+
             this.Close();
         }
     }
