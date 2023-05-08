@@ -270,5 +270,11 @@ namespace WindowClientSide
             UserForm3 userFormUpdate= new UserForm3();
             userFormUpdate.Show();
         }
+
+        private void updateTaskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateTaskForm taskFormUpdate = new UpdateTaskForm();
+            taskFormUpdate.Show();
+        }
     }
 }

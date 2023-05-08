@@ -142,6 +142,13 @@ namespace WindowClientSide.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllTaskInfoByTitle", ReplyAction="*")]
         System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleResponse> GetAllTaskInfoByTitleAsync(WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequest request);
         
+        // CODEGEN: Generating message contract since element name title from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateDataInTaskTable", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse UpdateDataInTaskTable(WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateDataInTaskTable", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse> UpdateDataInTaskTableAsync(WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest request);
+        
         // CODEGEN: Generating message contract since element name GetAllUserInfoByIdResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUserInfoById", ReplyAction="*")]
         WindowClientSide.ServiceReference1.GetAllUserInfoByIdResponse GetAllUserInfoById(WindowClientSide.ServiceReference1.GetAllUserInfoByIdRequest request);
@@ -1262,6 +1269,107 @@ namespace WindowClientSide.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateDataInTaskTableRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateDataInTaskTable", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequestBody Body;
+        
+        public UpdateDataInTaskTableRequest() {
+        }
+        
+        public UpdateDataInTaskTableRequest(WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateDataInTaskTableRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int idForSelecting;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string title;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string description;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public int reporter;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public int responsible;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public int sprint;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string estimation;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string priority;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string status;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string labels;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=10)]
+        public int projectPart;
+        
+        public UpdateDataInTaskTableRequestBody() {
+        }
+        
+        public UpdateDataInTaskTableRequestBody(int idForSelecting, string title, string description, int reporter, int responsible, int sprint, string estimation, string priority, string status, string labels, int projectPart) {
+            this.idForSelecting = idForSelecting;
+            this.title = title;
+            this.description = description;
+            this.reporter = reporter;
+            this.responsible = responsible;
+            this.sprint = sprint;
+            this.estimation = estimation;
+            this.priority = priority;
+            this.status = status;
+            this.labels = labels;
+            this.projectPart = projectPart;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateDataInTaskTableResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateDataInTaskTableResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponseBody Body;
+        
+        public UpdateDataInTaskTableResponse() {
+        }
+        
+        public UpdateDataInTaskTableResponse(WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class UpdateDataInTaskTableResponseBody {
+        
+        public UpdateDataInTaskTableResponseBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetAllUserInfoByIdRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUserInfoById", Namespace="http://tempuri.org/", Order=0)]
@@ -1929,6 +2037,50 @@ namespace WindowClientSide.ServiceReference1 {
             inValue.Body = new WindowClientSide.ServiceReference1.GetAllTaskInfoByTitleRequestBody();
             inValue.Body.title = title;
             return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).GetAllTaskInfoByTitleAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse WindowClientSide.ServiceReference1.WebService1Soap.UpdateDataInTaskTable(WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest request) {
+            return base.Channel.UpdateDataInTaskTable(request);
+        }
+        
+        public void UpdateDataInTaskTable(int idForSelecting, string title, string description, int reporter, int responsible, int sprint, string estimation, string priority, string status, string labels, int projectPart) {
+            WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequestBody();
+            inValue.Body.idForSelecting = idForSelecting;
+            inValue.Body.title = title;
+            inValue.Body.description = description;
+            inValue.Body.reporter = reporter;
+            inValue.Body.responsible = responsible;
+            inValue.Body.sprint = sprint;
+            inValue.Body.estimation = estimation;
+            inValue.Body.priority = priority;
+            inValue.Body.status = status;
+            inValue.Body.labels = labels;
+            inValue.Body.projectPart = projectPart;
+            WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInTaskTable(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse> WindowClientSide.ServiceReference1.WebService1Soap.UpdateDataInTaskTableAsync(WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest request) {
+            return base.Channel.UpdateDataInTaskTableAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse> UpdateDataInTaskTableAsync(int idForSelecting, string title, string description, int reporter, int responsible, int sprint, string estimation, string priority, string status, string labels, int projectPart) {
+            WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInTaskTableRequestBody();
+            inValue.Body.idForSelecting = idForSelecting;
+            inValue.Body.title = title;
+            inValue.Body.description = description;
+            inValue.Body.reporter = reporter;
+            inValue.Body.responsible = responsible;
+            inValue.Body.sprint = sprint;
+            inValue.Body.estimation = estimation;
+            inValue.Body.priority = priority;
+            inValue.Body.status = status;
+            inValue.Body.labels = labels;
+            inValue.Body.projectPart = projectPart;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInTaskTableAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

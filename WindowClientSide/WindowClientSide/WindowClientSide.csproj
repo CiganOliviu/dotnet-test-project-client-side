@@ -103,6 +103,12 @@
     <Compile Include="TaskForm.Designer.cs">
       <DependentUpon>TaskForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTaskForm.Designer.cs">
+      <DependentUpon>UpdateTaskForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaskForm.resx">
       <DependentUpon>TaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTaskForm.resx">
+      <DependentUpon>UpdateTaskForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm1.resx">
       <DependentUpon>UserForm1.cs</DependentUpon>
@@ -219,6 +228,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.UpdateDataInTaskTableResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse.datasource">

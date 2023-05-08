@@ -211,6 +211,26 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="UpdateDataInTaskTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idForSelecting" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reporter" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="responsible" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sprint" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="estimation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="priority" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="labels" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="projectPart" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataInTaskTableResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="GetAllUserInfoById">
         <s:complexType>
           <s:sequence>
@@ -357,6 +377,12 @@
   <wsdl:message name="GetAllTaskInfoByTitleSoapOut">
     <wsdl:part name="parameters" element="tns:GetAllTaskInfoByTitleResponse" />
   </wsdl:message>
+  <wsdl:message name="UpdateDataInTaskTableSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDataInTaskTable" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataInTaskTableSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDataInTaskTableResponse" />
+  </wsdl:message>
   <wsdl:message name="GetAllUserInfoByIdSoapIn">
     <wsdl:part name="parameters" element="tns:GetAllUserInfoById" />
   </wsdl:message>
@@ -443,6 +469,10 @@
     <wsdl:operation name="GetAllTaskInfoByTitle">
       <wsdl:input message="tns:GetAllTaskInfoByTitleSoapIn" />
       <wsdl:output message="tns:GetAllTaskInfoByTitleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInTaskTable">
+      <wsdl:input message="tns:UpdateDataInTaskTableSoapIn" />
+      <wsdl:output message="tns:UpdateDataInTaskTableSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetAllUserInfoById">
       <wsdl:input message="tns:GetAllUserInfoByIdSoapIn" />
@@ -605,6 +635,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllTaskInfoByTitle">
       <soap:operation soapAction="http://tempuri.org/GetAllTaskInfoByTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInTaskTable">
+      <soap:operation soapAction="http://tempuri.org/UpdateDataInTaskTable" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -788,6 +827,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllTaskInfoByTitle">
       <soap12:operation soapAction="http://tempuri.org/GetAllTaskInfoByTitle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInTaskTable">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDataInTaskTable" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

@@ -89,11 +89,12 @@
             this.displaySprintsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateSprintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.updateUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -559,6 +560,7 @@
             this.projectsToolStripMenuItem,
             this.sprintsToolStripMenuItem,
             this.allTasksToolStripMenuItem,
+            this.updateTaskToolStripMenuItem,
             this.allUsersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -637,6 +639,13 @@
             this.allTasksToolStripMenuItem.Text = "Add Task";
             this.allTasksToolStripMenuItem.Click += new System.EventHandler(this.allTasksToolStripMenuItem_Click);
             // 
+            // updateTaskToolStripMenuItem
+            // 
+            this.updateTaskToolStripMenuItem.Name = "updateTaskToolStripMenuItem";
+            this.updateTaskToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.updateTaskToolStripMenuItem.Text = "Update Task";
+            this.updateTaskToolStripMenuItem.Click += new System.EventHandler(this.updateTaskToolStripMenuItem_Click);
+            // 
             // allUsersToolStripMenuItem
             // 
             this.allUsersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -650,16 +659,23 @@
             // addUserToolStripMenuItem
             // 
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.addUserToolStripMenuItem.Text = "Add User";
             this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
             // displayUsersToolStripMenuItem
             // 
             this.displayUsersToolStripMenuItem.Name = "displayUsersToolStripMenuItem";
-            this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.displayUsersToolStripMenuItem.Text = "Display Users";
             this.displayUsersToolStripMenuItem.Click += new System.EventHandler(this.displayUsersToolStripMenuItem_Click);
+            // 
+            // updateUserToolStripMenuItem
+            // 
+            this.updateUserToolStripMenuItem.Name = "updateUserToolStripMenuItem";
+            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.updateUserToolStripMenuItem.Text = "Update User";
+            this.updateUserToolStripMenuItem.Click += new System.EventHandler(this.updateUserToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -670,13 +686,6 @@
             this.button1.Text = "Clear Select";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // updateUserToolStripMenuItem
-            // 
-            this.updateUserToolStripMenuItem.Name = "updateUserToolStripMenuItem";
-            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.updateUserToolStripMenuItem.Text = "Update User";
-            this.updateUserToolStripMenuItem.Click += new System.EventHandler(this.updateUserToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -814,6 +823,7 @@
         private System.Windows.Forms.ToolStripMenuItem updateProjectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateSprintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateTaskToolStripMenuItem;
     }
 }
 
