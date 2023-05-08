@@ -91,6 +91,7 @@
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.updateProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -567,7 +568,8 @@
             // 
             this.projectsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addProjectToolStripMenuItem,
-            this.displayProjectsToolStripMenuItem});
+            this.displayProjectsToolStripMenuItem,
+            this.updateProjectToolStripMenuItem});
             this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
             this.projectsToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.projectsToolStripMenuItem.Text = "Projects";
@@ -576,14 +578,14 @@
             // addProjectToolStripMenuItem
             // 
             this.addProjectToolStripMenuItem.Name = "addProjectToolStripMenuItem";
-            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.addProjectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addProjectToolStripMenuItem.Text = "Add Project";
             this.addProjectToolStripMenuItem.Click += new System.EventHandler(this.addProjectToolStripMenuItem_Click);
             // 
             // displayProjectsToolStripMenuItem
             // 
             this.displayProjectsToolStripMenuItem.Name = "displayProjectsToolStripMenuItem";
-            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.displayProjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.displayProjectsToolStripMenuItem.Text = "Display Projects";
             this.displayProjectsToolStripMenuItem.Click += new System.EventHandler(this.displayProjectsToolStripMenuItem_Click);
             // 
@@ -630,26 +632,33 @@
             // addUserToolStripMenuItem
             // 
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.addUserToolStripMenuItem.Text = "Add User";
             this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
             // displayUsersToolStripMenuItem
             // 
             this.displayUsersToolStripMenuItem.Name = "displayUsersToolStripMenuItem";
-            this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.displayUsersToolStripMenuItem.Text = "Display Users";
             this.displayUsersToolStripMenuItem.Click += new System.EventHandler(this.displayUsersToolStripMenuItem_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1348, 979);
+            this.button1.Location = new System.Drawing.Point(22, 454);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 23);
             this.button1.TabIndex = 52;
             this.button1.Text = "Clear Select";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // updateProjectToolStripMenuItem
+            // 
+            this.updateProjectToolStripMenuItem.Name = "updateProjectToolStripMenuItem";
+            this.updateProjectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.updateProjectToolStripMenuItem.Text = "Update Project";
+            this.updateProjectToolStripMenuItem.Click += new System.EventHandler(this.updateProjectToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -784,6 +793,7 @@
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayUsersToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem updateProjectToolStripMenuItem;
     }
 }
 

@@ -252,5 +252,11 @@ namespace WindowClientSide
 
             flag = true;
         }
+
+        private void updateProjectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 projectsFormUpdate = new Form4();
+            projectsFormUpdate.Show();
+        }
     }
 }

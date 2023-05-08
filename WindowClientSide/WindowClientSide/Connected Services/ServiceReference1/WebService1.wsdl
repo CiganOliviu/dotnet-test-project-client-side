@@ -48,6 +48,18 @@
       <s:element name="DeleteDataInProjectTableByNameResponse">
         <s:complexType />
       </s:element>
+      <s:element name="UpdateDataInProjectTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idForSelecting" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataInProjectTableResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="AddDataInSprinTable">
         <s:complexType>
           <s:sequence>
@@ -241,6 +253,12 @@
   <wsdl:message name="DeleteDataInProjectTableByNameSoapOut">
     <wsdl:part name="parameters" element="tns:DeleteDataInProjectTableByNameResponse" />
   </wsdl:message>
+  <wsdl:message name="UpdateDataInProjectTableSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDataInProjectTable" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataInProjectTableSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDataInProjectTableResponse" />
+  </wsdl:message>
   <wsdl:message name="AddDataInSprinTableSoapIn">
     <wsdl:part name="parameters" element="tns:AddDataInSprinTable" />
   </wsdl:message>
@@ -336,6 +354,10 @@
       <wsdl:input message="tns:DeleteDataInProjectTableByNameSoapIn" />
       <wsdl:output message="tns:DeleteDataInProjectTableByNameSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateDataInProjectTable">
+      <wsdl:input message="tns:UpdateDataInProjectTableSoapIn" />
+      <wsdl:output message="tns:UpdateDataInProjectTableSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="AddDataInSprinTable">
       <wsdl:input message="tns:AddDataInSprinTableSoapIn" />
       <wsdl:output message="tns:AddDataInSprinTableSoapOut" />
@@ -420,6 +442,15 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteDataInProjectTableByName">
       <soap:operation soapAction="http://tempuri.org/DeleteDataInProjectTableByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInProjectTable">
+      <soap:operation soapAction="http://tempuri.org/UpdateDataInProjectTable" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -576,6 +607,15 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteDataInProjectTableByName">
       <soap12:operation soapAction="http://tempuri.org/DeleteDataInProjectTableByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInProjectTable">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDataInProjectTable" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
