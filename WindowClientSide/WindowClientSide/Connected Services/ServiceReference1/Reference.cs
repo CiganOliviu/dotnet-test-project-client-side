@@ -79,6 +79,13 @@ namespace WindowClientSide.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInSprintTableByName", ReplyAction="*")]
         System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameResponse> DeleteDataInSprintTableByNameAsync(WindowClientSide.ServiceReference1.DeleteDataInSprintTableByNameRequest request);
         
+        // CODEGEN: Generating message contract since element name name from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateDataInSprintTable", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse UpdateDataInSprintTable(WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateDataInSprintTable", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse> UpdateDataInSprintTableAsync(WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest request);
+        
         // CODEGEN: Generating message contract since element name firstName from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInUserTable", ReplyAction="*")]
         WindowClientSide.ServiceReference1.AddDataInUserTableResponse AddDataInUserTable(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request);
@@ -99,6 +106,13 @@ namespace WindowClientSide.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteDataInUserTableByEmail", ReplyAction="*")]
         System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailResponse> DeleteDataInUserTableByEmailAsync(WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequest request);
+        
+        // CODEGEN: Generating message contract since element name firstName from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateDataInUserTable", ReplyAction="*")]
+        WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse UpdateDataInUserTable(WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateDataInUserTable", ReplyAction="*")]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse> UpdateDataInUserTableAsync(WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest request);
         
         // CODEGEN: Generating message contract since element name title from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddDataInTaskTable", ReplyAction="*")]
@@ -601,6 +615,79 @@ namespace WindowClientSide.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateDataInSprintTableRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateDataInSprintTable", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequestBody Body;
+        
+        public UpdateDataInSprintTableRequest() {
+        }
+        
+        public UpdateDataInSprintTableRequest(WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateDataInSprintTableRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int idForSelecting;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string name;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string period;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string productIncrementVersion;
+        
+        public UpdateDataInSprintTableRequestBody() {
+        }
+        
+        public UpdateDataInSprintTableRequestBody(int idForSelecting, string name, string period, string productIncrementVersion) {
+            this.idForSelecting = idForSelecting;
+            this.name = name;
+            this.period = period;
+            this.productIncrementVersion = productIncrementVersion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateDataInSprintTableResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateDataInSprintTableResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponseBody Body;
+        
+        public UpdateDataInSprintTableResponse() {
+        }
+        
+        public UpdateDataInSprintTableResponse(WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class UpdateDataInSprintTableResponseBody {
+        
+        public UpdateDataInSprintTableResponseBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class AddDataInUserTableRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddDataInUserTable", Namespace="http://tempuri.org/", Order=0)]
@@ -793,6 +880,83 @@ namespace WindowClientSide.ServiceReference1 {
     public partial class DeleteDataInUserTableByEmailResponseBody {
         
         public DeleteDataInUserTableByEmailResponseBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateDataInUserTableRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateDataInUserTable", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.UpdateDataInUserTableRequestBody Body;
+        
+        public UpdateDataInUserTableRequest() {
+        }
+        
+        public UpdateDataInUserTableRequest(WindowClientSide.ServiceReference1.UpdateDataInUserTableRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateDataInUserTableRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int idForSelecting;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string firstName;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string lastName;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string email;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string role;
+        
+        public UpdateDataInUserTableRequestBody() {
+        }
+        
+        public UpdateDataInUserTableRequestBody(int idForSelecting, string firstName, string lastName, string email, string role) {
+            this.idForSelecting = idForSelecting;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.email = email;
+            this.role = role;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateDataInUserTableResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateDataInUserTableResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WindowClientSide.ServiceReference1.UpdateDataInUserTableResponseBody Body;
+        
+        public UpdateDataInUserTableResponse() {
+        }
+        
+        public UpdateDataInUserTableResponse(WindowClientSide.ServiceReference1.UpdateDataInUserTableResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class UpdateDataInUserTableResponseBody {
+        
+        public UpdateDataInUserTableResponseBody() {
         }
     }
     
@@ -1510,6 +1674,36 @@ namespace WindowClientSide.ServiceReference1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse WindowClientSide.ServiceReference1.WebService1Soap.UpdateDataInSprintTable(WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest request) {
+            return base.Channel.UpdateDataInSprintTable(request);
+        }
+        
+        public void UpdateDataInSprintTable(int idForSelecting, string name, string period, string productIncrementVersion) {
+            WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequestBody();
+            inValue.Body.idForSelecting = idForSelecting;
+            inValue.Body.name = name;
+            inValue.Body.period = period;
+            inValue.Body.productIncrementVersion = productIncrementVersion;
+            WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInSprintTable(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse> WindowClientSide.ServiceReference1.WebService1Soap.UpdateDataInSprintTableAsync(WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest request) {
+            return base.Channel.UpdateDataInSprintTableAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse> UpdateDataInSprintTableAsync(int idForSelecting, string name, string period, string productIncrementVersion) {
+            WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInSprintTableRequestBody();
+            inValue.Body.idForSelecting = idForSelecting;
+            inValue.Body.name = name;
+            inValue.Body.period = period;
+            inValue.Body.productIncrementVersion = productIncrementVersion;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInSprintTableAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WindowClientSide.ServiceReference1.AddDataInUserTableResponse WindowClientSide.ServiceReference1.WebService1Soap.AddDataInUserTable(WindowClientSide.ServiceReference1.AddDataInUserTableRequest request) {
             return base.Channel.AddDataInUserTable(request);
         }
@@ -1586,6 +1780,38 @@ namespace WindowClientSide.ServiceReference1 {
             inValue.Body = new WindowClientSide.ServiceReference1.DeleteDataInUserTableByEmailRequestBody();
             inValue.Body.email = email;
             return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).DeleteDataInUserTableByEmailAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse WindowClientSide.ServiceReference1.WebService1Soap.UpdateDataInUserTable(WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest request) {
+            return base.Channel.UpdateDataInUserTable(request);
+        }
+        
+        public void UpdateDataInUserTable(int idForSelecting, string firstName, string lastName, string email, string role) {
+            WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInUserTableRequestBody();
+            inValue.Body.idForSelecting = idForSelecting;
+            inValue.Body.firstName = firstName;
+            inValue.Body.lastName = lastName;
+            inValue.Body.email = email;
+            inValue.Body.role = role;
+            WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInUserTable(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse> WindowClientSide.ServiceReference1.WebService1Soap.UpdateDataInUserTableAsync(WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest request) {
+            return base.Channel.UpdateDataInUserTableAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse> UpdateDataInUserTableAsync(int idForSelecting, string firstName, string lastName, string email, string role) {
+            WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInUserTableRequest();
+            inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInUserTableRequestBody();
+            inValue.Body.idForSelecting = idForSelecting;
+            inValue.Body.firstName = firstName;
+            inValue.Body.lastName = lastName;
+            inValue.Body.email = email;
+            inValue.Body.role = role;
+            return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInUserTableAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

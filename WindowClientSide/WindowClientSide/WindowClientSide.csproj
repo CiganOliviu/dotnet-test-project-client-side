@@ -85,6 +85,12 @@
     <Compile Include="SprintForm2.Designer.cs">
       <DependentUpon>SprintForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="SprintForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SprintForm3.Designer.cs">
+      <DependentUpon>SprintForm3.cs</DependentUpon>
+    </Compile>
     <Compile Include="SprintsForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </Compile>
     <EmbeddedResource Include="SprintForm2.resx">
       <DependentUpon>SprintForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SprintForm3.resx">
+      <DependentUpon>SprintForm3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SprintsForm1.resx">
       <DependentUpon>SprintsForm1.cs</DependentUpon>
@@ -198,6 +207,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.UpdateDataInProjectTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.UpdateDataInSprintTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WindowClientSide.ServiceReference1.UpdateDataInUserTableResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">

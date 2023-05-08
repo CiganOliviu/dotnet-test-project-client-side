@@ -667,6 +667,7 @@
             this.updateSprintToolStripMenuItem.Name = "updateSprintToolStripMenuItem";
             this.updateSprintToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.updateSprintToolStripMenuItem.Text = "Update Sprint";
+            this.updateSprintToolStripMenuItem.Click += new System.EventHandler(this.updateSprintToolStripMenuItem_Click);
             // 
             // Form1
             // 

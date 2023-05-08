@@ -258,5 +258,11 @@ namespace WindowClientSide
             Form4 projectsFormUpdate = new Form4();
             projectsFormUpdate.Show();
         }
+
+        private void updateSprintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SprintForm3 sprintFormUpdate = new SprintForm3();
+            sprintFormUpdate.Show();
+        }
     }
 }
