@@ -363,18 +363,14 @@ namespace WindowClientSide.ServiceReference1 {
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
         public int idForSelecting;
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int id;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string name;
         
         public UpdateDataInProjectTableRequestBody() {
         }
         
-        public UpdateDataInProjectTableRequestBody(int idForSelecting, int id, string name) {
+        public UpdateDataInProjectTableRequestBody(int idForSelecting, string name) {
             this.idForSelecting = idForSelecting;
-            this.id = id;
             this.name = name;
         }
     }
@@ -1415,11 +1411,10 @@ namespace WindowClientSide.ServiceReference1 {
             return base.Channel.UpdateDataInProjectTable(request);
         }
         
-        public void UpdateDataInProjectTable(int idForSelecting, int id, string name) {
+        public void UpdateDataInProjectTable(int idForSelecting, string name) {
             WindowClientSide.ServiceReference1.UpdateDataInProjectTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInProjectTableRequest();
             inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInProjectTableRequestBody();
             inValue.Body.idForSelecting = idForSelecting;
-            inValue.Body.id = id;
             inValue.Body.name = name;
             WindowClientSide.ServiceReference1.UpdateDataInProjectTableResponse retVal = ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInProjectTable(inValue);
         }
@@ -1429,11 +1424,10 @@ namespace WindowClientSide.ServiceReference1 {
             return base.Channel.UpdateDataInProjectTableAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInProjectTableResponse> UpdateDataInProjectTableAsync(int idForSelecting, int id, string name) {
+        public System.Threading.Tasks.Task<WindowClientSide.ServiceReference1.UpdateDataInProjectTableResponse> UpdateDataInProjectTableAsync(int idForSelecting, string name) {
             WindowClientSide.ServiceReference1.UpdateDataInProjectTableRequest inValue = new WindowClientSide.ServiceReference1.UpdateDataInProjectTableRequest();
             inValue.Body = new WindowClientSide.ServiceReference1.UpdateDataInProjectTableRequestBody();
             inValue.Body.idForSelecting = idForSelecting;
-            inValue.Body.id = id;
             inValue.Body.name = name;
             return ((WindowClientSide.ServiceReference1.WebService1Soap)(this)).UpdateDataInProjectTableAsync(inValue);
         }

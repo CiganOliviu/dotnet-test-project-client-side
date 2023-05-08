@@ -34,8 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.newProjectNameBoxInput = new System.Windows.Forms.TextBox();
             this.Projects = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.newProjectIdInputBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // projectIdInput
@@ -56,7 +54,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(234, 418);
+            this.button1.Location = new System.Drawing.Point(244, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 32);
             this.button1.TabIndex = 10;
@@ -67,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(200, 325);
+            this.label1.Location = new System.Drawing.Point(200, 261);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 16);
             this.label1.TabIndex = 9;
@@ -75,7 +73,7 @@
             // 
             // newProjectNameBoxInput
             // 
-            this.newProjectNameBoxInput.Location = new System.Drawing.Point(203, 354);
+            this.newProjectNameBoxInput.Location = new System.Drawing.Point(203, 290);
             this.newProjectNameBoxInput.Name = "newProjectNameBoxInput";
             this.newProjectNameBoxInput.Size = new System.Drawing.Size(199, 22);
             this.newProjectNameBoxInput.TabIndex = 8;
@@ -90,29 +88,11 @@
             this.Projects.TabIndex = 7;
             this.Projects.Text = "Update Project";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(200, 255);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 16);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "new project id";
-            // 
-            // newProjectIdInputBox
-            // 
-            this.newProjectIdInputBox.Location = new System.Drawing.Point(203, 284);
-            this.newProjectIdInputBox.Name = "newProjectIdInputBox";
-            this.newProjectIdInputBox.Size = new System.Drawing.Size(199, 22);
-            this.newProjectIdInputBox.TabIndex = 13;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 490);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.newProjectIdInputBox);
             this.Controls.Add(this.projectIdInput);
             this.Controls.Add(this.identifyProjectIdBoxInput);
             this.Controls.Add(this.button1);
@@ -135,7 +115,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox newProjectNameBoxInput;
         private System.Windows.Forms.Label Projects;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox newProjectIdInputBox;
     }
 }

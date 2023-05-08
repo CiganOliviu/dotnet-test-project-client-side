@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowClientSide
@@ -27,7 +20,7 @@ namespace WindowClientSide
 
         private void button1_Click(object sender, EventArgs e)
         {
-            service.UpdateDataInProjectTable(int.Parse(identifyProjectIdBoxInput.Text), int.Parse(newProjectIdInputBox.Text), newProjectNameBoxInput.Text);
+            service.UpdateDataInProjectTable(int.Parse(identifyProjectIdBoxInput.Text), newProjectNameBoxInput.Text);
             this.Close();
         }
     }
