@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.roleUpdateBox = new System.Windows.Forms.TextBox();
+            this.userRoleUpdateBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.emailUpdateBox = new System.Windows.Forms.TextBox();
+            this.userEmailUpdateBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.userLastNameUpdateBox = new System.Windows.Forms.TextBox();
             this.sprintIdInput = new System.Windows.Forms.Label();
@@ -51,12 +51,12 @@
             this.label4.TabIndex = 40;
             this.label4.Text = "role";
             // 
-            // roleUpdateBox
+            // userRoleUpdateBox
             // 
-            this.roleUpdateBox.Location = new System.Drawing.Point(281, 502);
-            this.roleUpdateBox.Name = "roleUpdateBox";
-            this.roleUpdateBox.Size = new System.Drawing.Size(199, 22);
-            this.roleUpdateBox.TabIndex = 39;
+            this.userRoleUpdateBox.Location = new System.Drawing.Point(281, 502);
+            this.userRoleUpdateBox.Name = "userRoleUpdateBox";
+            this.userRoleUpdateBox.Size = new System.Drawing.Size(199, 22);
+            this.userRoleUpdateBox.TabIndex = 39;
             // 
             // label3
             // 
@@ -67,12 +67,12 @@
             this.label3.TabIndex = 38;
             this.label3.Text = "email";
             // 
-            // emailUpdateBox
+            // userEmailUpdateBox
             // 
-            this.emailUpdateBox.Location = new System.Drawing.Point(281, 421);
-            this.emailUpdateBox.Name = "emailUpdateBox";
-            this.emailUpdateBox.Size = new System.Drawing.Size(199, 22);
-            this.emailUpdateBox.TabIndex = 37;
+            this.userEmailUpdateBox.Location = new System.Drawing.Point(281, 421);
+            this.userEmailUpdateBox.Name = "userEmailUpdateBox";
+            this.userEmailUpdateBox.Size = new System.Drawing.Size(199, 22);
+            this.userEmailUpdateBox.TabIndex = 37;
             // 
             // label2
             // 
@@ -112,8 +112,9 @@
             this.userAdd.Name = "userAdd";
             this.userAdd.Size = new System.Drawing.Size(114, 32);
             this.userAdd.TabIndex = 32;
-            this.userAdd.Text = "Add";
+            this.userAdd.Text = "Update";
             this.userAdd.UseVisualStyleBackColor = true;
+            this.userAdd.Click += new System.EventHandler(this.userAdd_Click);
             // 
             // label1
             // 
@@ -147,9 +148,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 743);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.roleUpdateBox);
+            this.Controls.Add(this.userRoleUpdateBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.emailUpdateBox);
+            this.Controls.Add(this.userEmailUpdateBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.userLastNameUpdateBox);
             this.Controls.Add(this.sprintIdInput);
@@ -168,9 +169,9 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox roleUpdateBox;
+        private System.Windows.Forms.TextBox userRoleUpdateBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox emailUpdateBox;
+        private System.Windows.Forms.TextBox userEmailUpdateBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox userLastNameUpdateBox;
         private System.Windows.Forms.Label sprintIdInput;

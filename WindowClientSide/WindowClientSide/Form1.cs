@@ -264,5 +264,11 @@ namespace WindowClientSide
             SprintForm3 sprintFormUpdate = new SprintForm3();
             sprintFormUpdate.Show();
         }
+
+        private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserForm3 userFormUpdate= new UserForm3();
+            userFormUpdate.Show();
+        }
     }
 }
