@@ -276,5 +276,38 @@ namespace WindowClientSide
             UpdateTaskForm taskFormUpdate = new UpdateTaskForm();
             taskFormUpdate.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var openSelectedItem = openColumn.SelectedItem as string;
+            var inProgressSelectedItem = progressColumn.SelectedItem as string;
+            var blockedSelectedItem = blockedColumn.SelectedItem as string; 
+            var codeReviewSelectedItem = codeReviewColumn.SelectedItem as string;   
+            var qaSelectedItem = qaColumn.SelectedItem as string;   
+
+            if (openSelectedItem != null)
+            {
+                service.UpdateDataInTaskTableByName(openSelectedItem, "InProgress");
+            }
+
+            if (inProgressSelectedItem != null)
+            {
+                service.UpdateDataInTaskTableByName(inProgressSelectedItem, "Blocked");
+            }
+
+            if (blockedSelectedItem != null)
+            {
+                service.UpdateDataInTaskTableByName(blockedSelectedItem, "CodeReview");
+            }
+
+            if (codeReviewSelectedItem != null) {
+                service.UpdateDataInTaskTableByName(codeReviewSelectedItem, "QA");
+            }
+
+            if (qaSelectedItem != null)
+            {
+                service.UpdateDataInTaskTableByName(qaSelectedItem, "Closed");
+            }
+        }
     }
 }

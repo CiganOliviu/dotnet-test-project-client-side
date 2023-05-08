@@ -231,6 +231,17 @@
       <s:element name="UpdateDataInTaskTableResponse">
         <s:complexType />
       </s:element>
+      <s:element name="UpdateDataInTaskTableByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataInTaskTableByNameResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="GetAllUserInfoById">
         <s:complexType>
           <s:sequence>
@@ -383,6 +394,12 @@
   <wsdl:message name="UpdateDataInTaskTableSoapOut">
     <wsdl:part name="parameters" element="tns:UpdateDataInTaskTableResponse" />
   </wsdl:message>
+  <wsdl:message name="UpdateDataInTaskTableByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDataInTaskTableByName" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataInTaskTableByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDataInTaskTableByNameResponse" />
+  </wsdl:message>
   <wsdl:message name="GetAllUserInfoByIdSoapIn">
     <wsdl:part name="parameters" element="tns:GetAllUserInfoById" />
   </wsdl:message>
@@ -473,6 +490,10 @@
     <wsdl:operation name="UpdateDataInTaskTable">
       <wsdl:input message="tns:UpdateDataInTaskTableSoapIn" />
       <wsdl:output message="tns:UpdateDataInTaskTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInTaskTableByName">
+      <wsdl:input message="tns:UpdateDataInTaskTableByNameSoapIn" />
+      <wsdl:output message="tns:UpdateDataInTaskTableByNameSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetAllUserInfoById">
       <wsdl:input message="tns:GetAllUserInfoByIdSoapIn" />
@@ -644,6 +665,15 @@
     </wsdl:operation>
     <wsdl:operation name="UpdateDataInTaskTable">
       <soap:operation soapAction="http://tempuri.org/UpdateDataInTaskTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInTaskTableByName">
+      <soap:operation soapAction="http://tempuri.org/UpdateDataInTaskTableByName" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -836,6 +866,15 @@
     </wsdl:operation>
     <wsdl:operation name="UpdateDataInTaskTable">
       <soap12:operation soapAction="http://tempuri.org/UpdateDataInTaskTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataInTaskTableByName">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDataInTaskTableByName" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
